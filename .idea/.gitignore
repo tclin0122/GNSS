@@ -1,0 +1,13 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+/GNSS.iml
+/misc.xml
+/modules.xml
+/profile_settings.xml
+/vcs.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
