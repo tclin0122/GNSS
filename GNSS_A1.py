@@ -20,8 +20,8 @@ b=a-fe*a # semi minor axis
 N=pow(a,2)/np.sqrt(pow(a,2)*pow(np.cos(np.deg2rad(lat)),2)+pow(b,2)*pow(np.sin(np.deg2rad(lat)),2))
 print(N)
 h=62+23
-## converting calculation
 
+## converting calculation
 X=(N+h)*np.cos(np.deg2rad(lat))*np.cos(np.deg2rad(lon))
 Y=(N+h)*np.cos(np.deg2rad(lat))*np.sin(np.deg2rad(lon))
 Z=(pow(b/a,2)*N+h)*np.sin(np.deg2rad(lat))
