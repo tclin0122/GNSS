@@ -28,4 +28,4 @@ Z=(pow(b/a,2)*N+h)*np.sin(np.deg2rad(lat))
 print (X,Y,Z)
 
 
-#Comment
+#Comment loll
