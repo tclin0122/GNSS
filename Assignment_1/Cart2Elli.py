@@ -33,10 +33,10 @@ def Car2Ellip(lat, lon, h):
 #use the xlsx file
 #import the GPS satellite position
 #need to use the right place
-dataframe1 =pd.read_excel('/Users/tzuchiao/Desktop/GNSS/Assignment_1/GPS_position.xlsx', index_col=None, header=None)
-Xs =pd.read_excel('/Users/tzuchiao/Desktop/GNSS/Assignment_1/GPS_position.xlsx',usecols='B', index_col=None, header=None).values
-Ys =pd.read_excel('/Users/tzuchiao/Desktop/GNSS/Assignment_1/GPS_position.xlsx',usecols='C', index_col=None, header=None).values
-Zs =pd.read_excel('/Users/tzuchiao/Desktop/GNSS/Assignment_1/GPS_position.xlsx',usecols='D', index_col=None, header=None).values
+dataframe1 =pd.read_excel('./GPS_position.xlsx', index_col=None, header=None)
+Xs =pd.read_excel('./GPS_position.xlsx',usecols='B', index_col=None, header=None).values
+Ys =pd.read_excel('./GPS_position.xlsx',usecols='C', index_col=None, header=None).values
+Zs =pd.read_excel('./GPS_position.xlsx',usecols='D', index_col=None, header=None).values
 print(dataframe1)
 print(Xs[0])
 #define another position to test the code 100m above the point
