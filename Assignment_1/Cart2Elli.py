@@ -3,14 +3,14 @@ import pandas as pd
 import array as arr
 
 ##parameters
-#latitude - phi
-LaD=59 #47
-LaM=20 #0
-LaS=59 #0
-#longitude - lambda
-LoD=18 #15
-LoM=4 #0
-LoS=10 #0
+# latitude - phi
+LaD = 59  # 47
+LaM = 20  # 0
+LaS = 59  # 0
+# longitude - lambda
+LoD = 18  # 15
+LoM = 4  # 0
+LoS = 10  # 0
 
 lat=LaD+LaM/60+LaS/3600
 lon=LoD+LoM/60+LoS/3600
