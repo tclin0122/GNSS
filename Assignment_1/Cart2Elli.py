@@ -36,10 +36,15 @@ def Car2Ellip(lat, lon, h):
 # use the xlsx file
 # import the GPS satellite position
 # need to use the right place
-dataframe1 = pd.read_excel('./GPS_position.xlsx', index_col=None, header=None)
-Xs = pd.read_excel('./GPS_position.xlsx', usecols='B', index_col=None, header=None).values
-Ys = pd.read_excel('./GPS_position.xlsx', usecols='C', index_col=None, header=None).values
-Zs = pd.read_excel('./GPS_position.xlsx', usecols='D', index_col=None, header=None).values
+#address /Users/tzuchiao/Desktop/GNSS/Assignment_1
+dataframe1 = pd.read_excel('/Users/tzuchiao/Desktop/GNSS/Assignment_1/GPS_position.xlsx', index_col=None, header=None)
+Xs = pd.read_excel('/Users/tzuchiao/Desktop/GNSS/Assignment_1/GPS_position.xlsx', usecols='B', index_col=None, header=None).values
+Ys = pd.read_excel('/Users/tzuchiao/Desktop/GNSS/Assignment_1/GPS_position.xlsx', usecols='C', index_col=None, header=None).values
+Zs = pd.read_excel('/Users/tzuchiao/Desktop/GNSS/Assignment_1/GPS_position.xlsx', usecols='D', index_col=None, header=None).values
+#dataframe1 = pd.read_excel('./GPS_position.xlsx', index_col=None, header=None)
+#Xs = pd.read_excel('./GPS_position.xlsx', usecols='B', index_col=None, header=None).values
+#Ys = pd.read_excel('./GPS_position.xlsx', usecols='C', index_col=None, header=None).values
+#Zs = pd.read_excel('./GPS_position.xlsx', usecols='D', index_col=None, header=None).values
 print(dataframe1)
 print(Xs[0])
 # define another position to test the code 100m above the point
@@ -84,24 +89,28 @@ ui = np.array([np.cos(np.deg2rad(lat)) * np.cos(np.deg2rad(lon)), np.cos(np.deg2
 R = np.array([ni, ei, ui])
 print(R)
 cnt = 0
+sij = np.zeros(29)
+alpha_ij = np.zeros(29)
+zij = np.zeros(29)
 for i in range(0, 29):
     Xij = np.array([Xj[0][i] - X, Xj[1][i] - Y, Xj[2][i] - Z])
-    xij = np.dot(np.transpose(R), Xij)
+    xij = np.dot((R), Xij)
     # initialize dynamic array
-    sij = []
-    alpha_ij = []
-    zij = []
-    sij.append(np.sqrt(pow(xij[0], 2) + pow(xij[1], 2) + pow(xij[2], 2)))  # spatial distance
-    alpha_ij.append(np.rad2deg(np.arctan2(xij[1], xij[2])))  # azimuth
-    zij.append(np.rad2deg(np.arccos(xij[2] / sij)))
+    
+    sij[i]=(np.sqrt(pow(xij[0], 2) + pow(xij[1], 2) + pow(xij[2], 2)))  # spatial distance
+    alpha_ij[i]=(np.rad2deg(np.arctan2(xij[1], xij[2])))  # azimuth
+    zij[i]=(np.rad2deg(np.arccos(xij[2] / sij[i])))
+    
     # same operation for check
     sc = np.sqrt(pow(xij[0], 2) + pow(xij[1], 2) + pow(xij[2], 2))
-    alpha_ij = np.rad2deg(np.arctan2(xij[1], xij[2]))
-    zc = np.rad2deg(np.arccos(xij[2] / sij))
-    print(sij)
-    print(alpha_ij)
-    print(zij)
-    if (zc >= 0 and zc <= 90):
+    alpha_c = np.rad2deg(np.arctan2(xij[1], xij[2]))
+    zc = np.rad2deg(np.arccos(xij[2] / sc))
+    el=90-zc
+    print('range',sc)
+    print('azith',alpha_c)
+    print(zc)
+    print("elevation",el)
+    if (el <= 90 and el>=0):
         cnt = cnt + 1
 print(sij)
 print(alpha_ij)
