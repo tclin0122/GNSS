@@ -1,3 +1,5 @@
+clear all
+
 %% Parameters
 % Global
 c = 299792458;               %[m/s]
@@ -65,40 +67,46 @@ tts = tt_A - Ps_Att / c
 
 dt_r = 0;                                       % neglectd for now
 
-t_oc = 86400 + 3600 * 2;
-dt_sv = a_f0 + a_f1*(tts-t_oc) + a_f2*(tts-t_oc)^2 + dt_r
-dts_L1 = dt_sv - T_GD
 
-
-%% 4. Compute ts by (15) using the correction from the step 3.
-
-ts = tts - dts_L1
-
-%% 5. Compute eccentric anomaly (Table 2 - line 4-8)
-
-% Computed mean motion
-n_0 = sqrt(mu/A^3)
-
-t_k = ts - t_oe
-
-%% 6. Compute Δtr by (29), SVt by (28), s L1 t by (27) and ts by (15).
-
-
-n = n_0 + dn
-
-M_k = M_0 + n * t_k
-E_0 = M_k
-
-E_ip = E_0
-for i = 10                      % TODO proper iteration number
-   E_i = M_k + e * sin(E_ip) 
-   E_ip = E_i
+for a = 1:20 
+    t_oc = 86400 + 3600 * 2;
+    dt_sv = a_f0 + a_f1*(tts-t_oc) + a_f2*(tts-t_oc)^2 + dt_r
+    dts_L1 = dt_sv - T_GD
+    
+    
+    %% 4. Compute ts by (15) using the correction from the step 3.
+    
+    ts = tts - dts_L1
+    
+    %% 5. Compute eccentric anomaly (Table 2 - line 4-8)
+    
+    % Computed mean motion
+    n_0 = sqrt(mu/A^3)
+    t_k = ts - t_oe
+    
+    %% 6. Compute Δtr by (29), SVt by (28), s L1 t by (27) and ts by (15).
+    
+    n = n_0 + dn
+    
+    M_k = M_0 + n * t_k
+    E_0 = M_k
+    
+    E_ip = 0;
+    E_i = E_0;
+    %cp=abs(E_i-E_ip)
+    
+    for a = 1:20 
+	    E_i=M_k+e*sin(E_ip)
+	    %cp=abs(E_i-E_ip)
+        E_ip = E_i;
+    end
+    
+    
+    
+    E_k = E_i;
+    dt_r = F * e * A_sqrt * sin(E_k)
 end
 
-E_k = E_i;
-dtr = F * e * A_sqrt * sin(E_k)
-
-% for for dtr
 
 %% 7. Compute satellite coordinates Xs, Ys, Zs, for time s t - Table 2 (line 4-19). Update the eccentric anomaly computed in step 5.
 
