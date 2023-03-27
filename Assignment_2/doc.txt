@@ -10,7 +10,7 @@ sqrt_A
 
 
 
-%%Variables
+%% Variables
 
 A = (sqrt_A)^2
 
@@ -22,4 +22,13 @@ n = n_0 + dn
 
 M_k = M_0 + n*t_k
 
-E_k = M_K + e*sin(E_k) 
+E_k = M_K + e*sin(E_k)
+
+sin(v_k) = (sqrt(1-e^2) * sin(E_k))/(1- e * cos(E_k))
+cos(v_k) =  (cos(E_k)-e)/(1 - e * cos(E_k))
+
+
+
+%% Compute signal propagation time
+
+dt5A = P5A
