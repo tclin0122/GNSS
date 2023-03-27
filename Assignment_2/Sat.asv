@@ -1,0 +1,93 @@
+%% Parameters
+% Global
+c = 299792458;               %[m/s]
+pi = 3.1415926535898;
+mu = 3.986005e14;            %[m3/s2]
+Omega_E = 7.2921151467e-5;   %[rad/s]
+
+% Step 3
+a_f0 = 1.093372702600e-06; %1-2
+a_f1 = 2.955857780760e-12;  %1-3
+a_f2 = 000000000000e+00;    %1-4
+T_GD = -9.313225746150e-10; %7-3
+
+% Step 5
+A_sqrt = ;
+A =  A_sqrt^2;
+t_oe = 9.360000000000e+04;  %4-1
+
+% Step 6
+
+e = 9.439246961850e-03 %3-2
+F = -4.442807633e-10; %[s /m^0.5]
+dn =;
+M_0 = ;
+
+
+
+
+% step6
+e=
+delta_n=4.158030341510e-09 %2-3
+M0=-1.234439725290e+00 %2-4
+
+%step 7
+%line 10
+w=-1.409026029280e+00 %5-3
+
+
+
+
+
+
+%% 1. Compute signal propagation time
+
+tt_A = 1 * 24 * 3600 + 3600;                   % passed time since GPS week started [s]
+Ps_Att = 25001256.67943;                       % [km]
+
+dts_A = Ps_Att/c
+
+
+%% 2. Compute signal transmission time
+
+tts = tt_A - Ps_Att / c
+
+%% 3. Compute satellite clock correction s L1 t by (27) and (28), neglect Δtr.
+
+dt_r = 0;                                       % neglectd for now
+
+dt_sv = a_f0 + a_f1*(tts-t_oc) + a_f2*(tts-t_oc)^2 + dt_r
+dts_L1 = dt_sv - T_GD
+
+
+%% 4. Compute ts by (15) using the correction from the step 3.
+
+ts = tts - dts_L1
+
+%% 5. Compute eccentric anomaly (Table 2 - line 4-8)
+
+% Computed mean motion
+n_0 = sqrt(mu/A^3)
+
+t_k = ts - t_oe
+
+%% 6. Compute Δtr by (29), SVt by (28), s L1 t by (27) and ts by (15).
+
+
+n = n_0 + dn
+
+M_k = M_0 + n * t_k
+E_0 = M_k
+
+E_ip = E_0
+for i = 10                      % TODO proper iteration number
+   E_i = M_k + e * sin(E_ip) 
+   E_ip = E_i
+end
+
+E_k = E_i;
+dtr = F * e * A_sqrt * sin(E_k)
+
+
+
+%% 7. Compute satellite coordinates Xs, Ys, Zs, for time s t - Table 2 (line 4-19). Update the eccentric anomaly computed in step 5.
