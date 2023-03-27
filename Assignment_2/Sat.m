@@ -104,8 +104,8 @@ dtr = F * e * A_sqrt * sin(E_k)
 
 %% Equations for coordinates output
 %line 9
-a=(sqrt(1-e^2)*sin(Ek))/(1-e*cos(Ek));
-b=(cos(Ek)-e)/(1-e*cos(Ek));
+a=(sqrt(1-e^2)*sin(E_k))/(1-e*cos(E_k));
+b=(cos(E_k)-e)/(1-e*cos(E_k));
 vk=atan2(a,b) %recommand to use atan
 
 %line 10
@@ -121,14 +121,14 @@ d_ik=Cis*sin(2*latk)+Cic*cos(2*latk)
 %line 14
 uk=latk+d_uk
 %line 15
-rk=A*(1-e*cos(Ek))+d_rk
+rk=A*(1-e*cos(E_k))+d_rk
 %line 16
-ik=i0+d_ik+IDOT*tk
+ik=i0+d_ik+IDOT*t_k 
 %line 17
 xkprime=rk*cos(uk)
 ykprime=rk*sin(uk)
 %line 18
-Omega_k=Omega_0+(Omega_dot-Omega_dot_e)*tk-Omega_dot_e*toe
+Omega_k=Omega_0+(Omega_dot-Omega_dot_e)*t_k-Omega_dot_e*t_oe 
 %line 19
 xk=xkprime*cos(Omega_k)-ykprime*cos(ik)*sin(Omega_k)
 yk=xkprime*sin(Omega_k)+ykprime*cos(ik)*cos(Omega_k)
