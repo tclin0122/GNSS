@@ -1,0 +1,25 @@
+%%parameters
+
+
+u=3.986005e+14 
+
+rotrate=7.922115167e+5
+
+sqrt_A
+
+
+
+
+%%Variables
+
+A = (sqrt_A)^2
+
+n_0 = sqrt(u/A^3)
+
+t_k = 
+
+n = n_0 + dn
+
+M_k = M_0 + n*t_k
+
+E_k = M_K + e*sin(E_k) 
