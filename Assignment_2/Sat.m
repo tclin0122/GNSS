@@ -1,5 +1,24 @@
 clear all
 
+%% File reading
+filename = 'test.xlsx';
+table_data = readtable(filename);
+disp(table_data);
+
+
+% Iterate through each row of the table
+for i = 1:height(table_data)
+    % Get the data from the i-th row of the table
+    row_data = table_data(i,:);
+    
+    % Process the row_data however you want
+    % For example, you can display the values in the row
+    disp(row_data);
+end
+
+
+
+
 %% Parameters
 % Global
 c = 299792458;               %[m/s]
