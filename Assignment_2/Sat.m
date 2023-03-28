@@ -9,7 +9,7 @@ Omega_E = 7.2921151467e-5;   %[rad/s]
 
 
 %% File reading
-filename = 'test.xlsx';
+filename = 'rinex.xlsx';
 table_data = readtable(filename);
 disp(table_data);
 
@@ -20,7 +20,7 @@ fprintf(output_file, 'PRN,X,Y,Z,dts_Li\n');
 
 
 % Iterate through each row of the table
-for i = 1:height(table_data)
+for i = 1:height(table_data)-1
     % Get the data from the i-th row of the table
     row_data = table_data(i,:);
     
@@ -38,7 +38,7 @@ for i = 1:height(table_data)
     T_GD = table_data.T_GD(i);              %7-3
     
     % Step 5    
-    A_sqrt = 5.153573421480e+03;            %3-4     <------------------------------------------------TODO
+    A_sqrt = table_data.sqrt_A(i);          %3-4
     A =  A_sqrt^2;
     t_oe = table_data.t_oe(i);              %4-1
     
