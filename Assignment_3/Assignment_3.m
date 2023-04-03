@@ -29,11 +29,24 @@ ylabel('B');
 legend('Original', 'Interpolated');
 
 
+%% d_R data
 
+data = readmatrix('d_R_data.csv'); % Read CSV file
+degrees = data(1,2:end); % Extract degrees
+heights = data(2:end,1); % Extract heights
+values = data(2:end,2:end); % Extract data values
 
+[X,Y] = meshgrid(degrees,heights); % Create grid of original data points
+[Xq,Yq] = meshgrid(min(degrees):0.5:max(degrees),min(heights):0.5:max(heights)); % Create query grid
 
+interp_values = interp2(X,Y,values,Xq,Yq);
 
-
+% Plot interpolated data
+figure;
+pcolor(Xq,Yq,interp_values);
+shading interp;
+xlabel('Degrees');
+ylabel('Heights');
 
 
 
