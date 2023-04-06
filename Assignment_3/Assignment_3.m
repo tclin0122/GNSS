@@ -20,35 +20,41 @@ B = B_data.B;
 
 % Interpolate the values
 new_height = linspace(min(height), max(height), 100); % new height values to interpolate
-new_B = interp1(height, B, new_height); % interpolate B values at new height values
+B_interp = interp1(height, B, new_height); % interpolate B values at new height values
 
 % Plot the interpolated values
-plot(height, B, 'o', new_height, new_B);
-xlabel('Height');
-ylabel('B');
-legend('Original', 'Interpolated');
+%plot(height, B, 'o', new_height, B_interp);
+%xlabel('Height');
+%ylabel('B');
+%legend('Original', 'Interpolated');
+
+B_table = array2table([transpose(new_height) transpose(B_interp)]);
+B_table.Properties.VariableNames(1:2) = {'Height','B'};
 
 
 %% d_R data
 
-data = readmatrix('d_R_data.csv'); % Read CSV file
-degrees = data(1,2:end); % Extract degrees
-heights = data(2:end,1); % Extract heights
-values = data(2:end,2:end); % Extract data values
+d_R_data = readmatrix('d_R_data.csv'); % Read CSV file
+degrees = d_R_data(1,2:end); % Extract degrees
+heights = d_R_data(2:end,1); % Extract heights
+values = d_R_data(2:end,2:end); % Extract data values
 
 [X,Y] = meshgrid(degrees,heights); % Create grid of original data points
-[Xq,Yq] = meshgrid(min(degrees):0.5:max(degrees),min(heights):0.5:max(heights)); % Create query grid
+degrees_interp = min(degrees):0.5:max(degrees);
+heights_interp = min(heights):0.5:max(heights);
+[Xq,Yq] = meshgrid(degrees_interp,heights_interp); % Create query grid
 
-interp_values = interp2(X,Y,values,Xq,Yq);
+d_R_interp = interp2(X,Y,values,Xq,Yq);
 
 % Plot interpolated data
-figure;
-pcolor(Xq,Yq,interp_values);
-shading interp;
-xlabel('Degrees');
-ylabel('Heights');
+%figure;
+%pcolor(Xq,Yq,d_R_interp);
+%shading interp;
+%xlabel('Degrees');
+%ylabel('Heights');
 
-
+d_R_table = array2table([transpose(degrees_interp) d_R_interp])
+%d_R_table.Properties.VariableNames(1:2) = {'Height','B'}
 
 
 %% Parameters
@@ -67,7 +73,9 @@ e = 6.108 * RH * exp((17.15*T-4684)/(T - 38.45));
 d_trop = (0.002277/cosd(Zen))*(P+(1255/T+0.05)*e-pow2(tand(Zen)))
 
 %Hoffman model
-%d_trop = (0.002277/cosd(Zen))*(P+(1255/T+0.05)*e-B*pow2(tand(Zen)))+d_R
+B_val = B_table.B(B_table.Height == 5)
+d_R_val = 0*d_R_interp;
+d_trop = (0.002277/cosd(Zen))*(P+(1255/T+0.05)*e-B_val*pow2(tand(Zen)))+d_R_val
 
 
 
