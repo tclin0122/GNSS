@@ -1,4 +1,4 @@
-clear all
+clear clc
 
 %% Positon data
 filename_pos = 'tester.csv';
@@ -35,14 +35,14 @@ B_table.Properties.VariableNames(1:2) = {'Height','B'};
 %% d_R data
 
 d_R_data = readmatrix('d_R_data.csv'); % Read CSV file
-degrees = d_R_data(1,2:end); % Extract degrees
-heights = d_R_data(2:end,1); % Extract heights
+heights = d_R_data(1,2:end); % Extract heights
+degrees = d_R_data(2:end,1); % Extract degrees
 values = d_R_data(2:end,2:end); % Extract data values
 
-[X,Y] = meshgrid(degrees,heights); % Create grid of original data points
+[X,Y] = meshgrid(heights,degrees); % Create grid of original data points
 degrees_interp = min(degrees):0.5:max(degrees);
 heights_interp = min(heights):0.5:max(heights);
-[Xq,Yq] = meshgrid(degrees_interp,heights_interp); % Create query grid
+[Xq,Yq] = meshgrid(heights_interp,degrees_interp); % Create query grid
 
 d_R_interp = interp2(X,Y,values,Xq,Yq);
 
@@ -50,10 +50,12 @@ d_R_interp = interp2(X,Y,values,Xq,Yq);
 %figure;
 %pcolor(Xq,Yq,d_R_interp);
 %shading interp;
-%xlabel('Degrees');
-%ylabel('Heights');
+%ylabel('Degrees');
+%xlabel('Heights');
 
-d_R_table = array2table([transpose(degrees_interp) d_R_interp])
+
+
+d_R_table = array2table([[0 heights_interp];[transpose(degrees_interp) d_R_interp]]);
 %d_R_table.Properties.VariableNames(1:2) = {'Height','B'}
 
 
@@ -73,8 +75,11 @@ e = 6.108 * RH * exp((17.15*T-4684)/(T - 38.45));
 d_trop = (0.002277/cosd(Zen))*(P+(1255/T+0.05)*e-pow2(tand(Zen)))
 
 %Hoffman model
-B_val = B_table.B(B_table.Height == 5)
-d_R_val = 0*d_R_interp;
+Hoff_height = 4.99999;  % TODOOOOO 
+Hoff_zenith = 60;
+B_val = B_table.B(B_table.Height == Hoff_height)
+d_R_val = d_R_interp(find(degrees_interp > Hoff_zenith && degrees_interp <= Hoff_zenith),find(heights_interp == Hoff_height))
+%d_R_val = 0*d_R_interp;
 d_trop = (0.002277/cosd(Zen))*(P+(1255/T+0.05)*e-B_val*pow2(tand(Zen)))+d_R_val
 
 
