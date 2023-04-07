@@ -75,10 +75,16 @@ e = 6.108 * RH * exp((17.15*T-4684)/(T - 38.45));
 d_trop = (0.002277/cosd(Zen))*(P+(1255/T+0.05)*e-pow2(tand(Zen)))
 
 %Hoffman model
-Hoff_height = 4.99999;  % TODOOOOO 
+Hoff_height = 4.9;  % TODOOOOO 
 Hoff_zenith = 60;
+
+relative_tolerance = 0.05; % 5% relative tolerance
+absolute_tolerance = Hoff_height * relative_tolerance;
+index = find(abs(heights_interp - Hoff_height) < absolute_tolerance, 1);
+
+
 B_val = B_table.B(B_table.Height == Hoff_height)
-d_R_val = d_R_interp(find(degrees_interp > Hoff_zenith && degrees_interp <= Hoff_zenith),find(heights_interp == Hoff_height))
+d_R_val = d_R_interp(find(degrees_interp == Hoff_zenith),find(heights_interp == Hoff_height))
 %d_R_val = 0*d_R_interp;
 d_trop = (0.002277/cosd(Zen))*(P+(1255/T+0.05)*e-B_val*pow2(tand(Zen)))+d_R_val
 
