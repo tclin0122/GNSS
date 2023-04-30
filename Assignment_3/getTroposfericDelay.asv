@@ -1,0 +1,26 @@
+function [outputArg1,outputArg2] = getTroposfericDelay(Zenit_angle,Height)
+%UNTITLED2 Summary of this function goes here
+%   Detailed explanation goes here
+
+
+
+outputArg1 = Zenit_angle;
+outputArg2 = Height;
+
+
+
+% Find the index of the element(s) in Heights with the minimum absolute difference
+[~, height_idx1] = min(abs(new_height - Hoff_height));
+[~, height_idx2] = min(abs(B_table.Height - Hoff_height));
+
+
+
+B_val = B_table.B(height_idx2);
+
+d_R_val = d_R_interp(find(degrees_interp == Hoff_zenith),height_idx1);
+
+d_trop = (0.002277/cosd(Zen))*(P+(1255/T+0.05)*e-B_val*pow2(tand(Zen)))+d_R_val
+
+
+
+end
