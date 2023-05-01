@@ -1,33 +1,3 @@
-clear clc
-
-
-%% Positon data
-filename_pos = 'output.csv';
-fileID = fopen(filename_pos,'r');
-headerLine = fgetl(fileID);
-columnNames = strsplit(headerLine, ',');
-Pos_data = readtable(filename_pos);
-fclose(fileID);
-%%
-M=readtable("output.csv");
-%Receiver position
-x=3104219.4530;
-y=998383.9820;
-z=5463290.5080;
-
-Xr=[x,y,z];
-Xij=[M.X-x,M.Y-y,M.Z-z];
-
-
-
-%% data from website
-TECU=5.3;
-
-
-%d_trop_func = getTroposfericDelay(60,3.2)
-
-d_iono_func = getIonosphericDelay(TECU,61.3512)
-
 %% function
 function [lat0, lon, h]=Ellop2Car(X, Y, Z)
     a = 6378137;  % semi major axis
@@ -47,3 +17,4 @@ function [lat0, lon, h]=Ellop2Car(X, Y, Z)
     end
 
 end
+

@@ -10,7 +10,7 @@ hi=350000; %m
 % start function
 TEC=TECU*10^16;
 
-OF=(1-((Re*sind(Zenit_angle)/(Re+hi)).^2)).^(-0.5)
-ionosphericDelay=(40.3/(f^2))*TEC*OF
+OF=(1-((Re*sind(Zenit_angle)/(Re+hi)).^2)).^(-0.5);
+ionosphericDelay=(40.3/(f^2))*TEC*OF;
 
 end
