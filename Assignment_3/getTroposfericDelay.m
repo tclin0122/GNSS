@@ -75,19 +75,27 @@ delayCorr = tropoDelayCorr;
 %ylabel('Degrees');
 %xlabel('Heights');
 
-temp = linspace(-30, 30, 100); % temperature range from -30 to 30 Celsius
-rh = linspace(0, 100, 100); % relative humidity range from 0% to 100%
+temp = linspace(-30, 30, 30); % temperature range from -30 to 30 Celsius
+rh = linspace(0.1, 80, 30); % relative humidity range from 0% to 100%
 
-[TH, RH] = meshgrid(temp, rh);
-TD = zeros(size(TH));
+
+TD = zeros(length(temp), length(rh)); % initialize tropospheric delay matrix
+
 Zen = 0;
-for i = 1:numel(TH)
-    for j = 1:numel(RH)
-        e = 6.108 * RH(j) * exp((17.15*TH(i)-4684)/(TH(i) - 38.45));
-        TD(i) = (0.002277/cosd(Zen))*(P+(1255/T+0.05)*e-B_val*pow2(tand(Zen)))+d_R_val;
+for i = 1:length(temp)
+    for j = 1:length(rh)
+        e = 6.108 * rh(j)/100 * exp((17.15*temp(i)-4684)/(temp(i) - 38.45));
+
+        [~, height_idx1] = min(abs(ipl_height - Height));
+        [~, height_idx2] = min(abs(B_table.Height - Height));
+        [~, zenith_idx] = min(abs(degrees_interp - Zen));
+        B_val = B_table.B(height_idx2);
+        d_R_val = d_R_interp(zenith_idx,height_idx1);
+        
+        TD(i,j) = (0.002277/cosd(Zen))*(P+(1255/T+0.05)*e-B_val*pow2(tand(Zen)))+d_R_val
     end
 end
-surf(TH, RH, TD);
+surf(temp, rh, TD);
 xlabel('Temperature (Celsius)');
 ylabel('Relative Humidity (%)');
 zlabel('Tropospheric Delay (m)');
