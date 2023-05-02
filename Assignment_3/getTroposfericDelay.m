@@ -32,7 +32,7 @@ d_R_table = array2table([[0 ipl_height];[transpose(degrees_interp) d_R_interp]])
 
 % Calculate water vapor partial pressure
 e = 6.108 * RH * exp((17.15*T-4684)/(T - 38.45));
-e = 0;
+
 
 % Saastamoinen model
 tropoDelaySaas = zeros(size(Zenit_angle));
@@ -74,5 +74,27 @@ delayCorr = tropoDelayCorr;
 %shading interp;
 %ylabel('Degrees');
 %xlabel('Heights');
+
+temp = linspace(-30, 30, 100); % temperature range from -30 to 30 Celsius
+rh = linspace(0, 100, 100); % relative humidity range from 0% to 100%
+
+[TH, RH] = meshgrid(temp, rh);
+TD = zeros(size(TH));
+Zen = 0;
+for i = 1:numel(TH)
+    for j = 1:numel(RH)
+        e = 6.108 * RH(j) * exp((17.15*TH(i)-4684)/(TH(i) - 38.45));
+        TD(i) = (0.002277/cosd(Zen))*(P+(1255/T+0.05)*e-B_val*pow2(tand(Zen)))+d_R_val;
+    end
+end
+surf(TH, RH, TD);
+xlabel('Temperature (Celsius)');
+ylabel('Relative Humidity (%)');
+zlabel('Tropospheric Delay (m)');
+
+colorbar;
+caxis([0, max(TD(:))]);
+xlim([-30, 30]);
+ylim([0, 100]);
 
 end
