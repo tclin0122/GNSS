@@ -93,6 +93,7 @@ for i = 1:length(temp)
         d_R_val = d_R_interp(zenith_idx,height_idx1);
         
         TD(i,j) = (0.002277/cosd(Zen))*(P+(1255/temp(i)+0.05)*e-B_val*pow2(tand(Zen)))+d_R_val
+        %TD(i,j) = (0.002277/cosd(Zen))*(P+(1255/temp(i)+0.05)*e-pow2(tand(Zen)))
     end
 end
 surf(temp, rh, TD);
@@ -102,7 +103,7 @@ zlabel('Tropospheric Delay (m)');
 
 colorbar;
 caxis([0, max(TD(:))]);
-xlim([-30+273, 30+273]);
+xlim([-30, 30]);
 ylim([0, 100]);
 
 end
