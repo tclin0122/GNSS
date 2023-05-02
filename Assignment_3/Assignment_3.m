@@ -23,7 +23,8 @@ Xr=[x,y,z];
 TECU=5.3;
 
 
-d_trop_func = getTroposfericDelay(61.25,3.2)
+[d_trop_funcsaa,d_trop_funccomp] = getTroposfericDelay(Zenit_angle,h/1000)
 
 d_iono_func = getIonosphericDelay(TECU,Zenit_angle)
 
+%PRN,Elevation,d_trop,d_ion
