@@ -59,29 +59,32 @@ delayCorr = tropoDelayCorr;
 
 
 
-
+%{
 % Plot the interpolated values
-%plot(height, B, 'o', ipl_height, B_interp);
-%xlabel('Height');
-%ylabel('B');
-%legend('Original', 'Interpolated');
+plot(height, B, 'o', ipl_height, B_interp);
+xlabel('Height');
+ylabel('B');
+legend('Original', 'Interpolated');
+%}
 
-
-
+%{
 % Plot interpolated data
-%figure;
-%pcolor(Xq,Yq,d_R_interp);
-%shading interp;
-%ylabel('Degrees');
-%xlabel('Heights');
+figure;
+pcolor(Xq,Yq,d_R_interp);
+shading interp;
+ylabel('Degrees');
+xlabel('Heights');
+colorbar;
+%}
 
+%{ 
 temp = linspace(-30+273, 30+273, 30); % temperature range from -30 to 30 Celsius
-rh = linspace(0.1, 100, 30); % relative humidity range from 0% to 100%
+rh = linspace(0, 100, 30); % relative humidity range from 0% to 100%
 
 
 TD = zeros(length(temp), length(rh)); % initialize tropospheric delay matrix
 
-Zen = 0;
+Zen = 60;
 for i = 1:length(temp)
     for j = 1:length(rh)
         e = 6.108 * rh(j)/100 * exp((17.15*temp(i)-4684)/(temp(i) - 38.45));
@@ -96,13 +99,13 @@ for i = 1:length(temp)
     end
 end
 surf(temp, rh, TD);
-xlabel('Temperature (Celsius)');
+xlabel('Temperature (K)');
 ylabel('Relative Humidity (%)');
 zlabel('Tropospheric Delay (m)');
+title(strcat('Delay for a zenith of  ', string(Zen), ' degrees.'))
 
 colorbar;
-caxis([0, max(TD(:))]);
 xlim([-30+273, 30+273]);
 ylim([0, 100]);
-
+%}
 end
