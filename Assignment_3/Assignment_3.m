@@ -34,7 +34,7 @@ output_filename = 'delays.csv';
 output_file = fopen(output_filename, 'w');
 fprintf(output_file, 'PRN,Elevation,d_trop (m),d_ion (m)\n');
 for i=1:12  
-    fprintf(output_file, '%d,%f,%f,%f\n', M.PRN(i), 90-Zenit_angle(i), d_trop_funccomp(i), d_iono_func(i))
+    fprintf(output_file, '%d,%f,%f,%f\n', M.PRN(i), 90-Zenit_angle(i), d_trop_funccomp(i), d_iono_func(i));
 end
 % Close the output text file
 fclose(output_file);

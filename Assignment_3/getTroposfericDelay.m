@@ -95,7 +95,7 @@ for i = 1:length(temp)
         B_val = B_table.B(height_idx2);
         d_R_val = d_R_interp(zenith_idx,height_idx1);
         
-        TD(i,j) = (0.002277/cosd(Zen))*(P+(1255/temp(i)+0.05)*e-B_val*pow2(tand(Zen)))+d_R_val
+        TD(i,j) = (0.002277/cosd(Zen))*(P+(1255/temp(i)+0.05)*e-B_val*pow2(tand(Zen)))+d_R_val;
     end
 end
 surf(temp, rh, TD);
