@@ -77,14 +77,14 @@ xlabel('Heights');
 colorbar;
 %}
 
-%{ 
+%{ %}
 temp = linspace(-30+273, 30+273, 30); % temperature range from -30 to 30 Celsius
 rh = linspace(0, 100, 30); % relative humidity range from 0% to 100%
 
 
 TD = zeros(length(temp), length(rh)); % initialize tropospheric delay matrix
 
-Zen = 60;
+Zen = 0;
 for i = 1:length(temp)
     for j = 1:length(rh)
         e = 6.108 * rh(j)/100 * exp((17.15*temp(i)-4684)/(temp(i) - 38.45));
@@ -107,5 +107,5 @@ title(strcat('Delay for a zenith of  ', string(Zen), ' degrees.'))
 colorbar;
 xlim([-30+273, 30+273]);
 ylim([0, 100]);
-%}
+
 end
