@@ -30,7 +30,7 @@ for i = 1:height(table_data)-1
 
 
     satnum = table_data.PRN(i);             % Satellite number
-    
+    Ps_Att=table_data.Pa(i);
     % Step 3
     a_f0 = table_data.a_f0(i);              %1-2
     a_f1 = table_data.a_f1(i);              %1-3
@@ -76,7 +76,7 @@ for i = 1:height(table_data)-1
     %% 1. Compute signal propagation time
     
     tt_A = 1 * 24 * 3600 + 3600;                   % passed time since GPS week started [s]
-    Ps_Att = 25001256.67943;                       % [km]
+    %Ps_Att = 25001256.67943;                       % [km]
     
     dts_A = Ps_Att/c;
     
@@ -90,7 +90,7 @@ for i = 1:height(table_data)-1
     dt_r = 0;                                       % neglectd for now
     
     
-    for a = 1:20 
+    for a = 1:30 
         t_oc = 86400 + 3600 * 2;
         dt_sv = a_f0 + a_f1*(tts-t_oc) + a_f2*(tts-t_oc)^2 + dt_r;
         dts_L1 = dt_sv - T_GD;
