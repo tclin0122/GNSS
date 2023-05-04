@@ -93,7 +93,7 @@ for i = 1:height(table_data)-1
     for a = 1:30 
         t_oc = 86400 + 3600 * 2;
         dt_sv = a_f0 + a_f1*(tts-t_oc) + a_f2*(tts-t_oc)^2 + dt_r;
-        dts_L1 = dt_sv - T_GD;
+        dts_L1 = vpa(dt_sv - T_GD,20);
         
         
         %% 4. Compute ts by (15) using the correction from the step 3.
@@ -183,7 +183,7 @@ for i = 1:height(table_data)-1
     fprintf('%d', dts_L1)
     fprintf('\n')
 
-    fprintf(output_file, '%d,%f,%f,%f,%f\n', satnum, xk, yk, zk, dts_L1)
+    fprintf(output_file, '%d,%f,%f,%f,%.9e\n', satnum, xk, yk, zk, dts_L1)
 
 end
 
