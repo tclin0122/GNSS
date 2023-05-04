@@ -1,16 +1,15 @@
 clear
 clc
 % read satellite
-M=readtable("output.csv")
-D=readtable("delays.csv")
+M=readtable("output.csv");
+D=readtable("delays.csv");
 
 filename = 'rinex.xlsx';
 table_data = readtable(filename);
-disp(table_data);
 % step 9: troposphere correction
-T=D.d_trop_m_ %m
+T=D.d_trop_m_; %m
 % step 10: ionosphere correction
-I=D.d_ion_m_ %m
+I=D.d_ion_m_; %m
 % step 11 and 16: 
 e=1e-5; %accept error level
 err_pre=0;
@@ -18,8 +17,8 @@ con=1;
 cnt=0;
 dta=0;
 %Parameters 
-Omega_dot=7.2921151467e-5 %[m^3/s^2] earth rotation rate
-c=299792458 %[m/s] speed of light
+Omega_dot=7.2921151467e-5; %[m^3/s^2] earth rotation rate
+c=299792458; %[m/s] speed of light
 %X, Y, Z for receiver status
 X=3104219.4530;
 Y=998383.9820;
@@ -28,9 +27,9 @@ Xa=X;
 Ya=Y;
 Za=Z;
 for i = 1:height(table_data)-1
-    Psa(i)=table_data.Pa(i)
+    Psa(i)=table_data.Pa(i);
 end
-Psa=round(Psa',3)
+Psa=Psa';
 
 while(con>e) 
     d_tsa=Psa/c;  %time difference between S and R
@@ -38,9 +37,9 @@ while(con>e)
     ya=Ya+Omega_dot*Xa*d_tsa;
     za=Za;
     %satellite position
-    Xs=round(M.X,3);
-    Ys=round(M.Y,3);
-    Zs=round(M.Z,3);
+    Xs=M.X;
+    Ys=M.Y;
+    Zs=M.Z;
     d_tL1=M.dts_Li;
     
     mx=Xs-xa;
@@ -55,7 +54,7 @@ while(con>e)
 
     % step 12 Compute L vector eq 19
   
-    L=Psa-dist_sa+c*d_tL1-I-T
+    L=Psa-dist_sa+c*d_tL1-I-T;
 	    %d_tL1: satellite clock error
 	    %I: Ionosphere delay
 	    %Troposphere delay
@@ -63,15 +62,15 @@ while(con>e)
     % step 13 Compute A matrix eq20 eq12
     A=ones(12,4);
 	%eq 12
-    ax=-(Xs-xa)./dist_sa
-    ay=-(Ys-ya)./dist_sa
-    az=-(Zs-za)./dist_sa
+    ax=-(Xs-Xa)./dist_sa;
+    ay=-(Ys-Xa)./dist_sa;
+    az=-(Zs-Xa)./dist_sa;
 	%eq20
-    A(:,1)=ax
-    A(:,2)=ay
-    A(:,3)=az
+    A(:,1)=ax;
+    A(:,2)=ay;
+    A(:,3)=az;
     % step 14 unknown parameters in eq18
-    Qx=inv(A'*A)
+    Qx=inv(A'*A);
     X_v=Qx*A'*L;
     v=A*X_v-L;
     err=v'*v;
