@@ -30,7 +30,7 @@ Za=Z;
 for i = 1:height(table_data)-1
     Psa(i)=table_data.Pa(i)
 end
-Psa=round(Psa',3)
+Psa=Psa'
 
 while(con>e) 
     d_tsa=Psa/c;  %time difference between S and R
@@ -38,9 +38,9 @@ while(con>e)
     ya=Ya+Omega_dot*Xa*d_tsa;
     za=Za;
     %satellite position
-    Xs=round(M.X,3);
-    Ys=round(M.Y,3);
-    Zs=round(M.Z,3);
+    Xs=M.X;
+    Ys=M.Y;
+    Zs=M.Z;
     d_tL1=M.dts_Li;
     
     mx=Xs-xa;
@@ -49,7 +49,7 @@ while(con>e)
     
     dist_sa=sqrt(mx.^2+my.^2+mz.^2) % convert into matrix calculation
     %first time neglect?
-    
+    %Psa=dist_sa+c*dta-c*d_tL1+I+T; %correct till here
     
     %%%%%%%%%%%%%%%%% <= todoooooo
 
@@ -64,8 +64,8 @@ while(con>e)
     A=ones(12,4);
 	%eq 12
     ax=-(Xs-xa)./dist_sa
-    ay=-(Ys-ya)./dist_sa
-    az=-(Zs-za)./dist_sa
+    ay=-(Ys-a)./dist_sa
+    az=-(Zs-Za)./dist_sa
 	%eq20
     A(:,1)=ax
     A(:,2)=ay
@@ -90,7 +90,6 @@ while(con>e)
     Za=Za+X_v(3);
     dta=X_v(4)/c;
     % step 16 iteration
-    %Psa=dist_sa+c*dta-c*d_tL1+I+T; %correct till here
     cnt=cnt+1;
 end
 
@@ -101,5 +100,4 @@ sx
 sy
 sz
 sc
-dta
 PDOP
