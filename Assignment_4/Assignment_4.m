@@ -1,4 +1,4 @@
-clear
+clear all
 clc
 % read satellite
 M=readtable("output.csv");
@@ -46,7 +46,7 @@ while(con>e)
     my=Ys-ya;
     mz=Zs-za;
     
-    dist_sa=sqrt(mx.^2+my.^2+mz.^2) % convert into matrix calculation
+    dist_sa=sqrt(mx.^2+my.^2+mz.^2); % convert into matrix calculation
     %first time neglect?
     
     
@@ -62,9 +62,9 @@ while(con>e)
     % step 13 Compute A matrix eq20 eq12
     A=ones(12,4);
 	%eq 12
-    ax=-(Xs-Xa)./dist_sa;
-    ay=-(Ys-Xa)./dist_sa;
-    az=-(Zs-Xa)./dist_sa;
+    ax=-(Xs-xa)./dist_sa;
+    ay=-(Ys-ya)./dist_sa;
+    az=-(Zs-za)./dist_sa;
 	%eq20
     A(:,1)=ax;
     A(:,2)=ay;
@@ -73,6 +73,7 @@ while(con>e)
     Qx=inv(A'*A);
     X_v=Qx*A'*L;
     v=A*X_v-L;
+    %v=L-A*X_v;
     err=v'*v;
     con=abs(err-err_pre);
     err_pre=err;
@@ -92,13 +93,21 @@ while(con>e)
     %Psa=dist_sa+c*dta-c*d_tL1+I+T; %correct till here
     cnt=cnt+1;
 end
+%% File writting
+output_filename = 'Sat.csv';
+output_file = fopen(output_filename, 'w');
+fprintf(output_file, 'PRN,L,X,Y,Z,P1,Sat_clk_err\n');
+for i=1:12  
+    fprintf(output_file, '%d,%f,%f,%f,%f,%f,%.10e\n', M.PRN(i), L(i,1), Xs(i,1), Ys(i,1),Zs(i,1),Psa(i,1),d_tL1(i,1));
+end
+% Close the output text file
+fclose(output_file);
+%% File writting
+output_filename = 'SPP.csv';
+output_file = fopen(output_filename, 'w');
+fprintf(output_file, 'Xr,Yr,Zr,sX,sY,sZ,clk_err,PDOP\n');  
+fprintf(output_file, '%d,%f,%f,%f,%f,%f,%.10e,%f\n', Xa, Ya, Za, sx,sy,sz,dta,PDOP);
+% Close the output text file
+fclose(output_file);
 
-Xa
-Ya
-Za
-sx
-sy
-sz
-sc
-dta
-PDOP
+
