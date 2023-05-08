@@ -44,6 +44,8 @@ x0
 Q0
 x_f=zeros(l,4); % store data
 x_f(1,:)=x0'
+x_m=zeros(l,4); % store data
+x_m(1,:)=x0'
 Q_f=zeros(4*25,4);% store data Q0*25
 Q_f(1:4,1:4)=Q0
 Q_p=zeros(4*25,4);% store data Q0*25
@@ -54,7 +56,7 @@ x_p=T*x0
 v1=sqrt(x_p(3)^2+x_p(4)^2)
 Qx1=T*Q0*T'+Qk
 Q_p(i*4+1:i*4+4,1:4)=Qx1
-
+x_m(i+1,:)=x_p'
 H=[1 0 0 0; 0 1 0 0; 0 0 x_p(3)/v1 x_p(4)/v1]
 % step 3 Gain calculation
 K1=Qx1*H'*inv(R+H*Qx1*H')
@@ -70,12 +72,12 @@ Q0=[I-K1*H]*Qx1
 
 Q_f(i*4+1:i*4+4,1:4)=Q0
 end
-
+tr=readtable("True_value.xlsx")
 %plotting the result
 
 % success without looping
 % read file
-tr=readtable("True_value.xlsx")
+
 figure(1)
 plot(x_f(:,1),x_f(:,2))
 hold on
@@ -100,15 +102,14 @@ legend('e_d (m)','n_d (m)','ve_d (m/s)','vn_d (m/s)')
 hold off
 
 
-%% Smoothing <=TOOOOOOODOOOOOOO
+%% Smoothing 
 x_s=zeros(l,4);
 x_s(l,:)=x_f(l,:);
 a=l;
-x_f(a,:)
 while(a>=2)
-    D=Q_f((a-1)*4-3:(a-1)*4,1:4)*T'*inv(Q_p((a)*4-3:(a)*4,1:4));
+    D=Q_f((a-1)*4-3:(a-1)*4,1:4)*T'*inv(Q_p((a-1)*4+1:(a)*4,1:4));
     Q_f((a-1)*4-3:(a-1)*4,1:4)
-    x_s(a-1,:)=(x_f(a-1,:)'+D*((x_s(a,:)-x_f(a,:))'))';
+    x_s(a-1,:)=(x_m(a-1,:)'+D*((x_s(a,:)-x_f(a,:))'))';
     %x_s(i-1,:)=
     a=a-1;
 end
