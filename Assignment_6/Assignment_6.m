@@ -160,6 +160,9 @@ An=[amid]
 Pn=[P_phase]
 % step 13
 X_vn=inv(An'*Pn*An)*An'*Pn*Ln
+Xn=X+X_vn(1)
+Yn=Y+X_vn(2)
+Zn=Z+X_vn(3)
 
 %step 14
 
