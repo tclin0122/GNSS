@@ -62,8 +62,8 @@ Ys = cell2mat(sat_data.sat_y)
 Zs = cell2mat(sat_data.sat_z)
 
 Xb = cell2mat(rec_data.rec_x(2))
-Yb = cell2mat(rec_data.rec_y(2))
-Zb = cell2mat(rec_data.rec_z(2))
+Yb = cell2mat(rec_data.rec_x(2))
+Zb = cell2mat(rec_data.rec_x(2))
 
 da=cell2mat(rec_data.rec_clock_corr(1))
 db=cell2mat(rec_data.rec_clock_corr(2))
@@ -106,9 +106,9 @@ ph_sab_d(ph_sab_d==0) = [];
 
 
 %step 4 
-ax=-(Xs-Xb)./roROV
-ay=-(Ys-Yb)./roROV
-az=-(Zs-Zb)./roROV
+ax=-(Xs-Xb)/roROV
+ay=-(Ys-Yb)/roROV
+az=-(Zs-Zb)/roROV
     %location from satellites and rover
     %roROV [m] from table
 ro_ab0=roROV-roREF
@@ -129,11 +129,11 @@ ro_ab0_d(ro_ab0_d==0)=[];
 % step 6 build A matrix and vector L
 
 
-L=[lamb*ph_sab_d-ro_ab0_d ; Psab_d-ro_ab0_d ]
+L=[lam*ph_sab_d-ro_ab0_d ; Psab_d-ro_ab0_d ]
 
 
-amid=[ax_d ay_d az_d]
-A=[[amid;amid] [diag(lamb*[1 1 1 1 1]); zeros(5)]]
+amid=[ax ay az]
+A=[[amid;amid] [diag(lam*[1 1 1 1 1]); zeros(5)]]
 X_v=inv(A'*P*A)*A'*P*L
 
 %step 7 Correct the approximate position of the rover
@@ -144,7 +144,7 @@ Z=Zb+X_v(3)
 %step 8 variance-covariance matrix
 
 Qahat=inv(A'*P*A) %Qx is 8*8 matrix, to get ambiguity fetch 5*5 from the rest part of Qx
-ahat=Qahat([4:8],[4:8])
+ahat=Qx([4:8],[4:8])
 
 %step 9 use the LAMBDA function
 [afixed,sqnorm,Ps,Qzhat,Z,nfixed,mu]=LAMBDA(ahat,Qahat);
