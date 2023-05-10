@@ -143,8 +143,9 @@ Z=Zb+X_v(3)
 
 %step 8 variance-covariance matrix
 
-Qahat=inv(A'*P*A) %Qx is 8*8 matrix, to get ambiguity fetch 5*5 from the rest part of Qx
-ahat=Qahat([4:8],[4:8])
+Qx=inv(A'*P*A) %Qx is 8*8 matrix, to get ambiguity fetch 5*5 from the rest part of Qx
+Qahat=Qx([4:8],[4:8])
+ahat = X_v(end-4:end)
 
 %step 9 use the LAMBDA function
 [afixed,sqnorm,Ps,Qzhat,Z,nfixed,mu]=LAMBDA(ahat,Qahat);
