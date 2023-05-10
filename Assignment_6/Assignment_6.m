@@ -153,7 +153,7 @@ ahat = X_v(end-4:end)
 
 % step 10
 %fixed ambiguity
-Ln=[lam*ph_sab_d-fixed_a]
+Ln=[lamb*ph_sab_d-afixed(:,1)]
 % step 11 <==not sure
 An=[amid]
 % step 12
