@@ -150,8 +150,18 @@ ahat = X_v(end-4:end)
 %step 9 use the LAMBDA function
 [afixed,sqnorm,Ps,Qzhat,Z,nfixed,mu]=LAMBDA(ahat,Qahat);
 
-%step 10 
 
+% step 10
+%fixed ambiguity
+Ln=[lam*ph_sab_d-fixed_a]
+% step 11 <==not sure
+An=[amid]
+% step 12
+Pn=[P_phase]
+% step 13
+X_vn=inv(An'*Pn*An)*An'*Pn*Ln
+
+%step 14
 
 
 
