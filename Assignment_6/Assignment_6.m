@@ -148,23 +148,36 @@ Qahat=Qx([4:8],[4:8])
 ahat = X_v(end-4:end)
 
 %step 9 use the LAMBDA function
-[afixed,sqnorm,Ps,Qzhat,Z,nfixed,mu]=LAMBDA(ahat,Qahat);
+[afixed,sqnorm,Ps,Qzhat,Z_t,nfixed,mu]=LAMBDA(ahat,Qahat);
 
 
 % step 10
 %fixed ambiguity
-Ln=[lamb*ph_sab_d-afixed(:,1)]
+Lnb=[L(1:5)-lamb*afixed(:,1)]
+Lnnb=[L(1:5)-lamb*afixed(:,2)]
 % step 11 <==not sure
 An=[amid]
 % step 12
 Pn=[P_phase]
 % step 13
-X_vn=inv(An'*Pn*An)*An'*Pn*Ln
-Xn=X+X_vn(1)
-Yn=Y+X_vn(2)
-Zn=Z+X_vn(3)
+X_vnb=inv(An'*Pn*An)*An'*Pn*Lnb
+X_vnnb=inv(An'*Pn*An)*An'*Pn*Lnnb
+Xn=Xb+X_vnb(1)
+Yn=Yb+X_vnb(2)
+Zn=Zb+X_vnb(3)
 
+%err
+dx=X-Xn
+dy=Y-Yn
+dz=Z-Zn
 %step 14
+%[afixed2,sqnorm,Ps,Qzhat2,Zt2,nfixed,mu]=LAMBDA(afixed,Qzhat,6)
+%[afixed2,sqnorm2,Ps2,Qz2,Z2,nfix2] = LAMBDA(afixed(:,1),Qzhat,6,'mu',0.3)
+vb=An*X_vnb-Lnb
+vnb=An*X_vnnb-Lnnb
+
+criti=(vnb'*Pn*vnb)/(vb'*Pn*vb)
+
 
 
 
