@@ -105,8 +105,8 @@ ph_sab=ph_sb-ph_sa
 
 %step 3 PRN 20 is our reference satellite and do the double difference
 % 4 5 6 24 25
-Psab_d=Psab-Psab(4)
-ph_sab_d=ph_sab-ph_sab(4)
+Psab_d=-Psab+Psab(4)
+ph_sab_d=-ph_sab+ph_sab(4)
 
 Psab_d(Psab_d==0) = [];
 ph_sab_d(ph_sab_d==0) = [];
@@ -120,15 +120,15 @@ az=-(Zs-Zb)./roROV
     %roROV [m] from table
 ro_ab0=roROV-roREF
 %step 5 double difference 
-ax_d=ax-ax(4)
-ay_d=ay-ay(4)
-az_d=az-az(4)
+ax_d=-ax+ax(4)
+ay_d=-ay+ay(4)
+az_d=-az+az(4)
 
 ax_d(ax_d==0)=[];
 ay_d(ay_d==0)=[];
 az_d(az_d==0)=[];
 
-ro_ab0_d=ro_ab0-ro_ab0(4);
+ro_ab0_d=-ro_ab0+ro_ab0(4);
 
 ro_ab0_d(ro_ab0_d==0)=[];
 
