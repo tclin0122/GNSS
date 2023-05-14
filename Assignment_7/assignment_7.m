@@ -46,6 +46,7 @@ x_f=zeros(l,4); % store data
 x_f(1,:)=x0'
 x_m=zeros(l,4); % store data
 x_m(1,:)=x0'
+
 Q_f=zeros(4*25,4);% store data Q0*25
 Q_f(1:4,1:4)=Q0
 Q_p=zeros(4*25,4);% store data Q0*25
@@ -53,6 +54,7 @@ Q_p(1:4,1:4)=Q0
 for i=1:(l-1)
 % step 2 Time propagation <= start the loop from here
 x_p=T*x0
+x_l(i,:)=x_p'
 v1=sqrt(x_p(3)^2+x_p(4)^2)
 Qx1=T*Q0*T'+Qk
 Q_p(i*4+1:i*4+4,1:4)=Qx1
@@ -65,6 +67,7 @@ K1=Qx1*H'*inv(R+H*Qx1*H')
 L1=[M.Var2(i+1); M.Var3(i+1); M.Var4(i+1)]
 hkxk_p=[x_p(1);x_p(2);v1]
 x_p=x_p+K1*[L1-hkxk_p]
+x_l(i+1,:)=T*x_p
 x0=x_p
 x_f(i+1,:)=x_p'
 % Step 5 Covariance update
@@ -109,7 +112,7 @@ a=l;
 while(a>=2)
     D=Q_f((a-1)*4-3:(a-1)*4,1:4)*T'*inv(Q_p((a-1)*4+1:(a)*4,1:4));
     Q_f((a-1)*4-3:(a-1)*4,1:4)
-    x_s(a-1,:)=(x_m(a-1,:)'+D*((x_s(a,:)-x_f(a,:))'))';
+    x_s(a-1,:)=(x_f(a-1,:)'+D*((x_s(a,:)-x_m(a,:))'))';
     %x_s(i-1,:)=
     a=a-1;
 end
