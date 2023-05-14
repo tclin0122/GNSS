@@ -145,13 +145,34 @@ Z=Zb+X_v(3)
 
 Qx=inv(A'*P*A) %Qx is 8*8 matrix, to get ambiguity fetch 5*5 from the rest part of Qx
 Qahat=Qx([4:8],[4:8])
-ahat
+ahat = X_v(end-4:end)
 
 %step 9 use the LAMBDA function
-[afixed,sqnorm,Ps,Qzhat,Z,nfixed,mu]=LAMBDA(ahat,Qahat);
+[afixed,sqnorm,Ps,Qzhat,Z_t,nfixed,mu]=LAMBDA(ahat,Qahat);
 
-%step 10 
 
+% step 10
+%fixed ambiguity
+Lnb=[lamb*ph_sab_d-afixed(:,1)]
+
+% step 11 <==not sure
+An=[amid]
+% step 12
+Pn=[P_phase]
+% step 13
+X_vnb=inv(An'*Pn*An)*An'*Pn*Lnb
+Xn=Xb+X_vn(1)
+Yn=Yb+X_vn(2)
+Zn=Zb+X_vn(3)
+
+%err
+dx=X-Xn
+dy=Y-Yn
+dz=Z-Zn
+%step 14
+%[afixed2,sqnorm,Ps,Qzhat2,Zt2,nfixed,mu]=LAMBDA(afixed,Qzhat,6)
+%[afixed2,sqnorm2,Ps2,Qz2,Z2,nfix2] = LAMBDA(afixed(:,1),Qzhat,6,'mu',0.3)
+vb=An*X_vnb-Lnb
 
 
 

@@ -1,0 +1,5160 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--This file represents feature coding definitions-->
+<FeatureCodingDefinitions CreationDate="2006-03-21T13:06:03" DateModified="2011-04-20T15:07:22.0522157-06:00" SchemaVersion="2.01" MaxFeatureNameLength="40" MaxAttributeNameLength="20" MaxCodeLength="20" MaxItemsPerGroup="9" MaxCategoryNameLength="20" Author="T Klock" xmlns="http://trimble.com/schema/fxl">
+  <LineStyleDefinitions Version="2" xmlns="http://trimble.com/schema/linestyle">
+    <LineStyleDefinition Name="Wire Fence" Description="Definition from Trimble Business Center">
+      <Units Reference="Paper" Length="Metric" />
+      <PatternType>PartToJoin</PatternType>
+      <Pattern TotalLength="1" EndLength="0.1414214">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.55" Y="0.05000001" />
+          <Location X="0.45" Y="-0.05000001" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.1414214">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.45" Y="0.05000001" />
+          <Location X="0.55" Y="-0.05000001" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.4">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0" />
+          <Location X="0.4" Y="0" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.4">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="1" Y="0" />
+          <Location X="0.6" Y="0" />
+        </Line>
+      </Pattern>
+    </LineStyleDefinition>
+    <LineStyleDefinition Name="Dashed 4-1" Description="Definition from Trimble Business Center">
+      <Units Reference="Paper" Length="Metric" />
+      <PatternType>PartToJoin</PatternType>
+      <Pattern TotalLength="1" EndLength="0.8">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0" />
+          <Location X="0.8" Y="0" />
+        </Line>
+      </Pattern>
+    </LineStyleDefinition>
+    <LineStyleDefinition Name="Water line" Description="Definition from Trimble Business Center">
+      <Units Reference="Paper" Length="Metric" />
+      <PatternType>PartToJoin</PatternType>
+      <Pattern TotalLength="1" EndLength="0.35">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0" />
+          <Location X="0.35" Y="0" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.2061553">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.4" Y="-0.09999996" />
+          <Location X="0.45" Y="0.1" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.1118034">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.45" Y="0.1" />
+          <Location X="0.5" Y="0" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.1118034">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.5" Y="0" />
+          <Location X="0.55" Y="0.1" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.2061553">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.55" Y="0.1" />
+          <Location X="0.6" Y="-0.09999996" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.35">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.65" Y="0" />
+          <Location X="1" Y="0" />
+        </Line>
+      </Pattern>
+    </LineStyleDefinition>
+    <LineStyleDefinition Name="Short dash dot" Description="Definition from Trimble Business Center">
+      <Units Reference="Paper" Length="Metric" />
+      <PatternType>PartToJoin</PatternType>
+      <Pattern TotalLength="1" EndLength="0.5">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0" />
+          <Location X="0.5" Y="0" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.004999995">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.75" Y="0" />
+          <Location X="0.755" Y="0" />
+        </Line>
+      </Pattern>
+    </LineStyleDefinition>
+    <LineStyleDefinition Name="Hedge" Description="Definition from Trimble Business Center">
+      <Units Reference="Paper" Length="Metric" />
+      <PatternType>PartToJoin</PatternType>
+      <Pattern TotalLength="1" EndLength="1.064765">
+        <Arc Color="Empty">
+          <Location X="0.5" Y="-0.915" />
+          <Radius>1.064765</Radius>
+          <StartAngle>25.0005166930546</StartAngle>
+          <DeltaAngle>359.998242784986</DeltaAngle>
+        </Arc>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1.064765">
+        <Arc Color="Empty">
+          <Location X="0.5" Y="0.915" />
+          <Radius>1.064765</Radius>
+          <StartAngle>-204.999633754372</StartAngle>
+          <DeltaAngle>359.998242784986</DeltaAngle>
+        </Arc>
+      </Pattern>
+    </LineStyleDefinition>
+    <LineStyleDefinition Name="Gate" Description="Definition from Trimble Business Center">
+      <Units Reference="Paper" Length="Metric" />
+      <PatternType>OneToPath</PatternType>
+      <Pattern TotalLength="1" EndLength="0.3">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="-0.15" />
+          <Location X="0" Y="0.15" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1.044031">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0.15" />
+          <Location X="1" Y="-0.15" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.3">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="1" Y="-0.15" />
+          <Location X="1" Y="0.15" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1.044031">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="1" Y="0.15" />
+          <Location X="0" Y="-0.15" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="-0.15" />
+          <Location X="1" Y="-0.15" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="1" Y="0.15" />
+          <Location X="0" Y="0.15" />
+        </Line>
+      </Pattern>
+    </LineStyleDefinition>
+    <LineStyleDefinition Name="Fence" Description="Definition from Trimble Business Center">
+      <Units Reference="Paper" Length="Metric" />
+      <PatternType>PartToJoin</PatternType>
+      <Pattern TotalLength="1" EndLength="0.425">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0" />
+          <Location X="0.425" Y="0" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.3162278">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.45" Y="0.15" />
+          <Location X="0.55" Y="-0.15" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.425">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.575" Y="0" />
+          <Location X="1" Y="0" />
+        </Line>
+      </Pattern>
+    </LineStyleDefinition>
+    <LineStyleDefinition Name="Pipe line" Description="Definition from Trimble Business Center">
+      <Units Reference="Paper" Length="Metric" />
+      <PatternType>PartToJoin</PatternType>
+      <Pattern TotalLength="1" EndLength="0.4">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0" />
+          <Location X="0.4" Y="0" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.2">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.4" Y="-0.09999996" />
+          <Location X="0.4" Y="0.1" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.2">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.6" Y="0.1" />
+          <Location X="0.6" Y="-0.09999996" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.4">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.6" Y="0" />
+          <Location X="1" Y="0" />
+        </Line>
+      </Pattern>
+    </LineStyleDefinition>
+    <LineStyleDefinition Name="Retaining Wall" Description="Definition from Trimble Business Center">
+      <Units Reference="Paper" Length="Metric" />
+      <PatternType>PartToJoin</PatternType>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="-0.5" />
+          <Location X="1" Y="-0.5" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="1" Y="0.5" />
+          <Location X="0" Y="0.5" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.8732125">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.35" Y="0.45" />
+          <Location X="0.55" Y="-0.4" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.8732125">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.7" Y="-0.4" />
+          <Location X="0.5" Y="0.45" />
+        </Line>
+      </Pattern>
+    </LineStyleDefinition>
+    <LineStyleDefinition Name="Center line" Description="Definition from Trimble Business Center">
+      <Units Reference="Paper" Length="Metric" />
+      <PatternType>PartToJoin</PatternType>
+      <Pattern TotalLength="1" EndLength="0.5">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0" />
+          <Location X="0.5" Y="0" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.17">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.665" Y="0" />
+          <Location X="0.835" Y="0" />
+        </Line>
+      </Pattern>
+    </LineStyleDefinition>
+    <LineStyleDefinition Name="Arrow" Description="Definition from Trimble Business Center">
+      <Units Reference="Paper" Length="Metric" />
+      <PatternType>OneToPath</PatternType>
+      <Pattern TotalLength="1" EndLength="0.5">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="-0.02499998" />
+          <Location X="0.5" Y="-0.02499998" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.275">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.5" Y="-0.02499998" />
+          <Location X="0.5" Y="-0.3" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.5830952">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.5" Y="-0.3" />
+          <Location X="1" Y="0" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.5830952">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="1" Y="0" />
+          <Location X="0.5" Y="0.3" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.275">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.5" Y="0.3" />
+          <Location X="0.5" Y="0.02500001" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.5">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.5" Y="0.02500001" />
+          <Location X="0" Y="0.02500001" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.04999998">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0.02500001" />
+          <Location X="0" Y="-0.02499998" />
+        </Line>
+      </Pattern>
+    </LineStyleDefinition>
+    <LineStyleDefinition Name="Dash dot dot 1" Description="Definition from Trimble Business Center">
+      <Units Reference="Paper" Length="Metric" />
+      <PatternType>PartToJoin</PatternType>
+      <Pattern TotalLength="1" EndLength="0.5">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0" />
+          <Location X="0.5" Y="0" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.004999995">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.665" Y="0" />
+          <Location X="0.67" Y="0" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.004999995">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.83" Y="0" />
+          <Location X="0.835" Y="0" />
+        </Line>
+      </Pattern>
+    </LineStyleDefinition>
+    <LineStyleDefinition Name="Dash dot dot 2" Description="Definition from Trimble Business Center">
+      <Units Reference="Paper" Length="Metric" />
+      <PatternType>PartToJoin</PatternType>
+      <Pattern TotalLength="1" EndLength="0.665">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0" />
+          <Location X="0.665" Y="0" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.004999995">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.775" Y="0" />
+          <Location X="0.78" Y="0" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.004999995">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.885" Y="0" />
+          <Location X="0.89" Y="0" />
+        </Line>
+      </Pattern>
+    </LineStyleDefinition>
+    <LineStyleDefinition Name="Dashed 1-1" Description="Definition from Trimble Business Center">
+      <Units Reference="Paper" Length="Metric" />
+      <PatternType>PartToJoin</PatternType>
+      <Pattern TotalLength="1" EndLength="0.5">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0" />
+          <Location X="0.5" Y="0" />
+        </Line>
+      </Pattern>
+    </LineStyleDefinition>
+    <LineStyleDefinition Name="Dashed 2-1" Description="Definition from Trimble Business Center">
+      <Units Reference="Paper" Length="Metric" />
+      <PatternType>PartToJoin</PatternType>
+      <Pattern TotalLength="1" EndLength="0.665">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0" />
+          <Location X="0.665" Y="0" />
+        </Line>
+      </Pattern>
+    </LineStyleDefinition>
+    <LineStyleDefinition Name="Dashed 3-1" Description="Definition from Trimble Business Center">
+      <Units Reference="Paper" Length="Metric" />
+      <PatternType>PartToJoin</PatternType>
+      <Pattern TotalLength="1" EndLength="0.75">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0" />
+          <Location X="0.75" Y="0" />
+        </Line>
+      </Pattern>
+    </LineStyleDefinition>
+    <LineStyleDefinition Name="Double dashed" Description="Definition from Trimble Business Center">
+      <Units Reference="Paper" Length="Metric" />
+      <PatternType>PartToJoin</PatternType>
+      <Pattern TotalLength="1" EndLength="0.5">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="-0.5" />
+          <Location X="0.5" Y="-0.5" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.5">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0.5" />
+          <Location X="0.5" Y="0.5" />
+        </Line>
+      </Pattern>
+    </LineStyleDefinition>
+    <LineStyleDefinition Name="Duct" Description="Definition from Trimble Business Center">
+      <Units Reference="Paper" Length="Metric" />
+      <PatternType>PartToJoin</PatternType>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="-0.5" />
+          <Location X="1" Y="-0.5" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="1" Y="0.5" />
+          <Location X="0" Y="0.5" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1.019804">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.4" Y="0.5" />
+          <Location X="0.6" Y="-0.5" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1.019804">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.4" Y="-0.5" />
+          <Location X="0.6" Y="0.5" />
+        </Line>
+      </Pattern>
+    </LineStyleDefinition>
+    <LineStyleDefinition Name="Long dash dot" Description="Definition from Trimble Business Center">
+      <Units Reference="Paper" Length="Metric" />
+      <PatternType>PartToJoin</PatternType>
+      <Pattern TotalLength="1" EndLength="0.665">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0" />
+          <Location X="0.665" Y="0" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.004999995">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.835" Y="0" />
+          <Location X="0.83" Y="0" />
+        </Line>
+      </Pattern>
+    </LineStyleDefinition>
+    <LineStyleDefinition Name="Power line" Description="Definition from Trimble Business Center">
+      <Units Reference="Paper" Length="Metric" />
+      <PatternType>PartToJoin</PatternType>
+      <Pattern TotalLength="1" EndLength="0.35">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0" />
+          <Location X="0.35" Y="0" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.2">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.4" Y="0.1" />
+          <Location X="0.4" Y="-0.09999996" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.4" Y="-0.09999996" />
+          <Location X="0.5" Y="-0.09999996" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.09999996">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.5" Y="-0.09999996" />
+          <Location X="0.5" Y="0" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.5" Y="0" />
+          <Location X="0.4" Y="0" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.45">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.55" Y="0" />
+          <Location X="1" Y="0" />
+        </Line>
+      </Pattern>
+    </LineStyleDefinition>
+    <LineStyleDefinition Name="Railway 1" Description="Definition from Trimble Business Center">
+      <Units Reference="Paper" Length="Metric" />
+      <PatternType>PartToJoin</PatternType>
+      <Pattern TotalLength="1" EndLength="0.5">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0" />
+          <Location X="0.5" Y="0" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.5">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.5" Y="-0.25" />
+          <Location X="0.5" Y="0.25" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.5">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.5" Y="0" />
+          <Location X="1" Y="0" />
+        </Line>
+      </Pattern>
+    </LineStyleDefinition>
+    <LineStyleDefinition Name="Railway 2" Description="Definition from Trimble Business Center">
+      <Units Reference="Paper" Length="Metric" />
+      <PatternType>PartToJoin</PatternType>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="-0.5" />
+          <Location X="1" Y="-0.5" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="1" Y="0.5" />
+          <Location X="0" Y="0.5" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0.5" />
+          <Location X="0" Y="-0.5" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.025" Y="-0.5" />
+          <Location X="0.025" Y="0.5" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.05" Y="0.5" />
+          <Location X="0.05" Y="-0.5" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.075" Y="-0.5" />
+          <Location X="0.075" Y="0.5" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.09999999" Y="0.5" />
+          <Location X="0.09999999" Y="-0.5" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.125" Y="-0.5" />
+          <Location X="0.125" Y="0.5" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.15" Y="0.5" />
+          <Location X="0.15" Y="-0.5" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.175" Y="-0.5" />
+          <Location X="0.175" Y="0.5" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.2" Y="0.5" />
+          <Location X="0.2" Y="-0.5" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.225" Y="-0.5" />
+          <Location X="0.225" Y="0.5" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.25" Y="0.5" />
+          <Location X="0.25" Y="-0.5" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.275" Y="-0.5" />
+          <Location X="0.275" Y="0.5" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.3" Y="0.5" />
+          <Location X="0.3" Y="-0.5" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.325" Y="-0.5" />
+          <Location X="0.325" Y="0.5" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.35" Y="0.5" />
+          <Location X="0.35" Y="-0.5" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.375" Y="-0.5" />
+          <Location X="0.375" Y="0.5" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.4" Y="0.5" />
+          <Location X="0.4" Y="-0.5" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.425" Y="-0.5" />
+          <Location X="0.425" Y="0.5" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.45" Y="0.5" />
+          <Location X="0.45" Y="-0.5" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.475" Y="-0.5" />
+          <Location X="0.475" Y="0.5" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.5" Y="0.5" />
+          <Location X="0.5" Y="-0.5" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="1" Y="-0.5" />
+          <Location X="1" Y="0.5" />
+        </Line>
+      </Pattern>
+    </LineStyleDefinition>
+    <LineStyleDefinition Name="Sanitary sewer" Description="Definition from Trimble Business Center">
+      <Units Reference="Paper" Length="Metric" />
+      <PatternType>PartToJoin</PatternType>
+      <Pattern TotalLength="1" EndLength="0.4">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0" />
+          <Location X="0.4" Y="0" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.05000001">
+        <Arc Color="Empty">
+          <Location X="0.5" Y="0.05000001" />
+          <Radius>0.05000001</Radius>
+          <StartAngle>-89.9995581917792</StartAngle>
+          <DeltaAngle>179.999116383559</DeltaAngle>
+        </Arc>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.05000001">
+        <Arc Color="Empty">
+          <Location X="0.5" Y="-0.05000001" />
+          <Radius>0.05000001</Radius>
+          <StartAngle>-89.9995581917792</StartAngle>
+          <DeltaAngle>-179.999116383559</DeltaAngle>
+        </Arc>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.4">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.6" Y="0" />
+          <Location X="1" Y="0" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.1414214">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.45" Y="-0.05000001" />
+          <Location X="0.55" Y="0.05000001" />
+        </Line>
+      </Pattern>
+    </LineStyleDefinition>
+    <LineStyleDefinition Name="Stormwater" Description="Definition from Trimble Business Center">
+      <Units Reference="Paper" Length="Metric" />
+      <PatternType>PartToJoin</PatternType>
+      <Pattern TotalLength="1" EndLength="0.3">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0" />
+          <Location X="0.3" Y="0" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.05099021">
+        <Arc Color="Empty">
+          <Location X="0.4" Y="0.06" />
+          <Radius>0.05099021</Radius>
+          <StartAngle>-101.309422010654</StartAngle>
+          <DeltaAngle>157.37938217836</DeltaAngle>
+        </Arc>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.05000001">
+        <Arc Color="Empty">
+          <Location X="0.4" Y="-0.05000001" />
+          <Radius>0.05000001</Radius>
+          <StartAngle>-89.9995581917792</StartAngle>
+          <DeltaAngle>-179.999116383559</DeltaAngle>
+        </Arc>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.2061553">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.5" Y="-0.09999996" />
+          <Location X="0.55" Y="0.1" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.1118034">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.55" Y="0.1" />
+          <Location X="0.6" Y="0" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.1118034">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.6" Y="0" />
+          <Location X="0.65" Y="0.1" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.2061553">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.65" Y="0.1" />
+          <Location X="0.7" Y="-0.09999996" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.25">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.75" Y="0" />
+          <Location X="1" Y="0" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.1414214">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.35" Y="-0.05000001" />
+          <Location X="0.45" Y="0.05000001" />
+        </Line>
+      </Pattern>
+    </LineStyleDefinition>
+    <LineStyleDefinition Name="Telephone line" Description="Definition from Trimble Business Center">
+      <Units Reference="Paper" Length="Metric" />
+      <PatternType>PartToJoin</PatternType>
+      <Pattern TotalLength="1" EndLength="0.4">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0" />
+          <Location X="0.4" Y="0" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.45" Y="-0.05000001" />
+          <Location X="0.55" Y="-0.05000001" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.5" Y="-0.05000001" />
+          <Location X="0.5" Y="0.05000001" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.4">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.6" Y="0" />
+          <Location X="1" Y="0" />
+        </Line>
+      </Pattern>
+    </LineStyleDefinition>
+    <LineStyleDefinition Name="Top of bank" Description="Definition from Trimble Business Center">
+      <Units Reference="Paper" Length="Metric" />
+      <PatternType>PartToJoin</PatternType>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0" />
+          <Location X="1" Y="0" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.09999996">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.6" Y="0" />
+          <Location X="0.5" Y="0" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.0707107">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.5" Y="0" />
+          <Location X="0.45" Y="-0.05000001" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.1118034">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.45" Y="-0.05000001" />
+          <Location X="0.5" Y="-0.15" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.5" Y="-0.15" />
+          <Location X="0.5" Y="-0.25" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.1118034">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.5" Y="-0.15" />
+          <Location X="0.55" Y="-0.05000001" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.0707107">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.55" Y="-0.05000001" />
+          <Location X="0.5" Y="0" />
+        </Line>
+      </Pattern>
+    </LineStyleDefinition>
+    <LineStyleDefinition Name="Wall" Description="Definition from Trimble Business Center">
+      <Units Reference="Paper" Length="Metric" />
+      <PatternType>PartToJoin</PatternType>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="-0.5" />
+          <Location X="1" Y="-0.5" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="1">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0.5" />
+          <Location X="1" Y="0.5" />
+        </Line>
+      </Pattern>
+    </LineStyleDefinition>
+    <LineStyleDefinition Name="Watercourse" Description="Definition from Trimble Business Center">
+      <Units Reference="Paper" Length="Metric" />
+      <Color Name="ff0000ff" Red="0" Green="0" Blue="255" />
+      <PatternType>PartToJoin</PatternType>
+      <Pattern TotalLength="1" EndLength="0.8">
+        <Line Color="ff0000ff" LineWeight="1">
+          <Location X="0" Y="0" />
+          <Location X="0.8" Y="0" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.4031129">
+        <Line Color="ff0000ff" LineWeight="1">
+          <Location X="0.45" Y="-0.2" />
+          <Location X="0.8" Y="0" />
+        </Line>
+      </Pattern>
+      <Pattern TotalLength="1" EndLength="0.3605551">
+        <Line Color="ff0000ff" LineWeight="1">
+          <Location X="0.8" Y="0" />
+          <Location X="0.5" Y="0.2" />
+        </Line>
+      </Pattern>
+    </LineStyleDefinition>
+    <LineStyleDefinition Name="Solid" Description="Definition from Trimble Business Center">
+      <Units Reference="Ground" Length="Metric" />
+      <Color Name="Red" Red="255" Green="0" Blue="0" />
+      <PatternType>Default</PatternType>
+      <Pattern TotalLength="10000" EndLength="0">
+        <Line Color="Red" LineWeight="1">
+          <Location X="0" Y="0" />
+          <Location X="10000" Y="0" />
+        </Line>
+      </Pattern>
+    </LineStyleDefinition>
+  </LineStyleDefinitions>
+  <SymbolDefinitions Version="2" xmlns="http://trimble.com/schema/symbol">
+    <SymbolDefinition Name="Solid circle">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Component Number="1" Name="">
+        <Arc Color="Empty">
+          <Location X="0" Y="0" />
+          <Radius>1</Radius>
+          <StartAngle>90</StartAngle>
+          <DeltaAngle>360.000010017913</DeltaAngle>
+        </Arc>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.89" Y="-0.36" />
+          <Location X="-0.89" Y="0.33" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.89" Y="0.33" />
+          <Location X="-0.79" Y="0.54" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.79" Y="0.54" />
+          <Location X="-0.79" Y="-0.55" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.79" Y="-0.55" />
+          <Location X="-0.68" Y="-0.68" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.68" Y="-0.68" />
+          <Location X="-0.68" Y="0.66" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.68" Y="0.66" />
+          <Location X="-0.58" Y="0.76" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.58" Y="0.76" />
+          <Location X="-0.58" Y="-0.76" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.58" Y="-0.76" />
+          <Location X="-0.47" Y="-0.81" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.47" Y="-0.81" />
+          <Location X="-0.47" Y="0.8" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.47" Y="0.8" />
+          <Location X="-0.37" Y="0.87" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.37" Y="0.87" />
+          <Location X="-0.37" Y="-0.86" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.37" Y="-0.86" />
+          <Location X="-0.26" Y="-0.92" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.26" Y="-0.92" />
+          <Location X="-0.26" Y="0.92" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.26" Y="0.92" />
+          <Location X="-0.16" Y="0.9400001" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.16" Y="0.9400001" />
+          <Location X="-0.16" Y="-0.94" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.16" Y="-0.94" />
+          <Location X="-0.05000001" Y="-0.95" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.05000001" Y="-0.95" />
+          <Location X="-0.05000001" Y="0.96" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.05000001" Y="0.96" />
+          <Location X="0.04999995" Y="0.96" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.04999995" Y="0.96" />
+          <Location X="0.04999995" Y="-0.95" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.04999995" Y="-0.95" />
+          <Location X="0.16" Y="-0.94" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.16" Y="-0.94" />
+          <Location X="0.16" Y="0.9299999" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.16" Y="0.9299999" />
+          <Location X="0.26" Y="0.91" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.26" Y="0.91" />
+          <Location X="0.26" Y="-0.92" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.26" Y="-0.92" />
+          <Location X="0.37" Y="-0.87" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.37" Y="-0.87" />
+          <Location X="0.37" Y="0.87" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.37" Y="0.87" />
+          <Location X="0.47" Y="0.8099999" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.47" Y="0.8099999" />
+          <Location X="0.47" Y="-0.82" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.47" Y="-0.82" />
+          <Location X="0.58" Y="-0.76" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.58" Y="-0.76" />
+          <Location X="0.58" Y="0.76" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.58" Y="0.76" />
+          <Location X="0.6799999" Y="0.65" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.6799999" Y="0.65" />
+          <Location X="0.6799999" Y="-0.67" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.6799999" Y="-0.67" />
+          <Location X="0.79" Y="-0.53" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.79" Y="-0.53" />
+          <Location X="0.79" Y="0.52" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.79" Y="0.52" />
+          <Location X="0.89" Y="0.34" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.89" Y="-0.33" />
+          <Location X="0.89" Y="0.34" />
+        </Line>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="Double triangle">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Component Number="1" Name="">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="1.037736" />
+          <Location X="-0.9433962" Y="-0.5660378" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.9433962" Y="-0.5660378" />
+          <Location X="0" Y="1.037736" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.9433962" Y="-0.5660378" />
+          <Location X="0.9433962" Y="-0.5660378" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.4528302" Y="-0.2830189" />
+          <Location X="0.4528302" Y="-0.2830189" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.4528302" Y="-0.2830189" />
+          <Location X="0" Y="0.509434" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0.509434" />
+          <Location X="0.4528302" Y="-0.2830189" />
+        </Line>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="Single circle">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Component Number="1" Name="">
+        <Arc Color="Empty">
+          <Location X="0" Y="0" />
+          <Radius>1</Radius>
+          <StartAngle>90</StartAngle>
+          <DeltaAngle>360.000010017913</DeltaAngle>
+        </Arc>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="Double circle">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Component Number="1" Name="">
+        <Arc Color="Empty">
+          <Location X="0" Y="0" />
+          <Radius>1</Radius>
+          <StartAngle>90</StartAngle>
+          <DeltaAngle>360.000010017913</DeltaAngle>
+        </Arc>
+        <Arc Color="Empty">
+          <Location X="0" Y="0" />
+          <Radius>0.6</Radius>
+          <StartAngle>90</StartAngle>
+          <DeltaAngle>360.000010017913</DeltaAngle>
+        </Arc>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="Box Cross">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Component Number="1" Name="">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-1" Y="-1" />
+          <Location X="-1" Y="1" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-1" Y="1" />
+          <Location X="1" Y="1" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="1" Y="1" />
+          <Location X="1" Y="-1" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="1" Y="-1" />
+          <Location X="-1" Y="-1" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-1" Y="-1" />
+          <Location X="1" Y="1" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="1" Y="-1" />
+          <Location X="-1" Y="1" />
+        </Line>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="Tree 2">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Component Number="1" Name="">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.04999995" Y="0.59" />
+          <Location X="0.04999995" Y="0.9" />
+        </Line>
+        <Arc Color="Empty">
+          <Location X="0.26" Y="0.52" />
+          <Radius>0.4304649</Radius>
+          <StartAngle>120.735490650733</StartAngle>
+          <DeltaAngle>-112.605379189658</DeltaAngle>
+        </Arc>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.6799999" Y="0.58" />
+          <Location X="0.37" Y="0.37" />
+        </Line>
+        <Arc Color="Empty">
+          <Location X="0.49" Y="0.22" />
+          <Radius>0.4070626</Radius>
+          <StartAngle>62.1759122719917</StartAngle>
+          <DeltaAngle>-104.163133572841</DeltaAngle>
+        </Arc>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.79" Y="-0.05000001" />
+          <Location X="0.47" Y="-0.05000001" />
+        </Line>
+        <Arc Color="Empty">
+          <Location X="0.61" Y="-0.29" />
+          <Radius>0.3</Radius>
+          <StartAngle>53.1301114610756</StartAngle>
+          <DeltaAngle>-149.036247150872</DeltaAngle>
+        </Arc>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.58" Y="-0.58" />
+          <Location X="0.37" Y="-0.26" />
+        </Line>
+        <Arc Color="Empty">
+          <Location X="0.26" Y="-0.65" />
+          <Radius>0.3275668</Radius>
+          <StartAngle>12.3390840955731</StartAngle>
+          <DeltaAngle>-143.525015053847</DeltaAngle>
+        </Arc>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.04999995" Y="-0.89" />
+          <Location X="0.04999995" Y="-0.47" />
+        </Line>
+        <Arc Color="Empty">
+          <Location X="-0.16" Y="-0.65" />
+          <Radius>0.3189044</Radius>
+          <StartAngle>-48.8140771009462</StartAngle>
+          <DeltaAngle>-143.910277231963</DeltaAngle>
+        </Arc>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.47" Y="-0.58" />
+          <Location X="-0.26" Y="-0.37" />
+        </Line>
+        <Arc Color="Empty">
+          <Location X="-0.55" Y="-0.26" />
+          <Radius>0.3298485</Radius>
+          <StartAngle>-75.9637602987218</StartAngle>
+          <DeltaAngle>-145.222162600332</DeltaAngle>
+        </Arc>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.79" Y="-0.05000001" />
+          <Location X="-0.47" Y="-0.05000001" />
+        </Line>
+        <Arc Color="Empty">
+          <Location X="-0.57" Y="0.23" />
+          <Radius>0.3560899</Radius>
+          <StartAngle>-128.157225240723</StartAngle>
+          <DeltaAngle>-140.206194514268</DeltaAngle>
+        </Arc>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.58" Y="0.58" />
+          <Location X="-0.26" Y="0.26" />
+        </Line>
+        <Arc Color="Empty">
+          <Location X="-0.16" Y="0.53" />
+          <Radius>0.4229657</Radius>
+          <StartAngle>173.211015594517</StartAngle>
+          <DeltaAngle>-113.467449219089</DeltaAngle>
+        </Arc>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0.1" />
+          <Location X="0" Y="-0.1" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.1" Y="0" />
+          <Location X="-0.1" Y="0" />
+        </Line>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="Solid double circle">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Component Number="1" Name="">
+        <Arc Color="Empty">
+          <Location X="0" Y="0" />
+          <Radius>1</Radius>
+          <StartAngle>90</StartAngle>
+          <DeltaAngle>360.000010017913</DeltaAngle>
+        </Arc>
+        <Arc Color="Empty">
+          <Location X="0" Y="0" />
+          <Radius>0.6</Radius>
+          <StartAngle>90</StartAngle>
+          <DeltaAngle>360.000010017913</DeltaAngle>
+        </Arc>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.53" Y="0.22" />
+          <Location X="-0.53" Y="-0.21" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.53" Y="-0.21" />
+          <Location X="-0.42" Y="-0.37" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.42" Y="-0.37" />
+          <Location X="-0.42" Y="0.37" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.42" Y="0.37" />
+          <Location X="-0.32" Y="0.47" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.32" Y="0.47" />
+          <Location X="-0.32" Y="-0.45" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.32" Y="-0.45" />
+          <Location X="-0.21" Y="-0.5" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.21" Y="-0.5" />
+          <Location X="-0.21" Y="0.52" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.21" Y="0.52" />
+          <Location X="-0.11" Y="0.55" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.11" Y="0.55" />
+          <Location X="-0.11" Y="-0.53" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.11" Y="-0.53" />
+          <Location X="0" Y="-0.55" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="-0.55" />
+          <Location X="0" Y="0.5599999" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0.5599999" />
+          <Location X="0.11" Y="0.55" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.11" Y="0.55" />
+          <Location X="0.11" Y="-0.53" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.11" Y="-0.53" />
+          <Location X="0.21" Y="-0.49" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.21" Y="-0.49" />
+          <Location X="0.21" Y="0.51" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.21" Y="0.51" />
+          <Location X="0.3200001" Y="0.45" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.3200001" Y="0.45" />
+          <Location X="0.3200001" Y="-0.45" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.3200001" Y="-0.45" />
+          <Location X="0.42" Y="-0.35" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.42" Y="-0.35" />
+          <Location X="0.42" Y="0.36" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.42" Y="0.36" />
+          <Location X="0.53" Y="0.17" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.53" Y="0.17" />
+          <Location X="0.53" Y="-0.18" />
+        </Line>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="Valve">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Color Name="Blue" Red="0" Green="0" Blue="255" />
+      <Component Number="1" Name="">
+        <Line Color="Blue" LineWeight="1">
+          <Location X="-1" Y="0.6" />
+          <Location X="1" Y="-0.6" />
+        </Line>
+        <Line Color="Blue" LineWeight="1">
+          <Location X="1" Y="-0.6" />
+          <Location X="1" Y="0.6" />
+        </Line>
+        <Line Color="Blue" LineWeight="1">
+          <Location X="1" Y="0.6" />
+          <Location X="-1" Y="-0.6" />
+        </Line>
+        <Line Color="Blue" LineWeight="1">
+          <Location X="-1" Y="-0.6" />
+          <Location X="-1" Y="0.6" />
+        </Line>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="Iron grate">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Component Number="1" Name="">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-1" Y="0.6" />
+          <Location X="1" Y="0.6" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="1" Y="0.3" />
+          <Location X="-1" Y="0.3" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-1" Y="0" />
+          <Location X="1" Y="0" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="1" Y="-0.3" />
+          <Location X="-1" Y="-0.3" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-1" Y="-0.6" />
+          <Location X="1" Y="-0.6" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-1" Y="0.6" />
+          <Location X="-1" Y="-0.6" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="1" Y="0.6" />
+          <Location X="1" Y="-0.6" />
+        </Line>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="PP">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Component Number="1" Name="">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="1" />
+          <Location X="0" Y="0.86" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0.79" />
+          <Location X="0" Y="0.65" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0.58" />
+          <Location X="0" Y="0.4400001" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0.26" />
+          <Location X="0" Y="0.37" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="-0.26" />
+          <Location X="0" Y="-0.37" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="-0.44" />
+          <Location X="0" Y="-0.58" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="-0.65" />
+          <Location X="0" Y="-0.79" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="-0.86" />
+          <Location X="0" Y="-1" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.26" Y="0" />
+          <Location X="-0.37" Y="0" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.44" Y="0" />
+          <Location X="-0.58" Y="0" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.26" Y="0" />
+          <Location X="0.37" Y="0" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.4400001" Y="0" />
+          <Location X="0.58" Y="0" />
+        </Line>
+        <Arc Color="Empty">
+          <Location X="0" Y="-0.01999998" />
+          <Radius>0.2789265</Radius>
+          <StartAngle>104.534454641582</StartAngle>
+          <DeltaAngle>-29.0689211350348</DeltaAngle>
+        </Arc>
+        <Arc Color="Empty">
+          <Location X="0" Y="0" />
+          <Radius>0.2641969</Radius>
+          <StartAngle>60.5241139323655</StartAngle>
+          <DeltaAngle>-31.048227864731</DeltaAngle>
+        </Arc>
+        <Arc Color="Empty">
+          <Location X="-0.01999998" Y="0" />
+          <Radius>0.2789265</Radius>
+          <StartAngle>14.5344664934528</StartAngle>
+          <DeltaAngle>-29.0689211350348</DeltaAngle>
+        </Arc>
+        <Arc Color="Empty">
+          <Location X="0" Y="0" />
+          <Radius>0.2641969</Radius>
+          <StartAngle>-29.4758860676345</StartAngle>
+          <DeltaAngle>-31.048227864731</DeltaAngle>
+        </Arc>
+        <Arc Color="Empty">
+          <Location X="0" Y="0.01999998" />
+          <Radius>0.2789265</Radius>
+          <StartAngle>-75.4655335065472</StartAngle>
+          <DeltaAngle>-29.0689211350348</DeltaAngle>
+        </Arc>
+        <Arc Color="Empty">
+          <Location X="0" Y="0" />
+          <Radius>0.2641969</Radius>
+          <StartAngle>-119.475886067635</StartAngle>
+          <DeltaAngle>-31.048227864731</DeltaAngle>
+        </Arc>
+        <Arc Color="Empty">
+          <Location X="0.01999998" Y="0" />
+          <Radius>0.2789265</Radius>
+          <StartAngle>-165.465545358418</StartAngle>
+          <DeltaAngle>-29.0689211350347</DeltaAngle>
+        </Arc>
+        <Arc Color="Empty">
+          <Location X="0" Y="0" />
+          <Radius>0.2641969</Radius>
+          <StartAngle>150.524113932365</StartAngle>
+          <DeltaAngle>-31.048227864731</DeltaAngle>
+        </Arc>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="Hydrant">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Component Number="1" Name="">
+        <Arc Color="Empty">
+          <Location X="0" Y="1.7" />
+          <Radius>0.3</Radius>
+          <StartAngle>90</StartAngle>
+          <DeltaAngle>360.000010017913</DeltaAngle>
+        </Arc>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.26" Y="1.85" />
+          <Location X="-0.26" Y="1.56" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.26" Y="1.56" />
+          <Location X="-0.2" Y="1.92" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.2" Y="1.92" />
+          <Location X="-0.2" Y="1.49" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.2" Y="1.49" />
+          <Location X="-0.15" Y="1.96" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.15" Y="1.96" />
+          <Location X="-0.15" Y="1.45" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.15" Y="1.45" />
+          <Location X="-0.1" Y="1.98" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.1" Y="1.98" />
+          <Location X="-0.1" Y="1.42" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.1" Y="1.42" />
+          <Location X="-0.05000001" Y="2" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.05000001" Y="2" />
+          <Location X="-0.05000001" Y="1.41" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.05000001" Y="1.41" />
+          <Location X="0" Y="2" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="2" />
+          <Location X="0" Y="1.41" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="1.41" />
+          <Location X="0.04999995" Y="2" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.04999995" Y="2" />
+          <Location X="0.04999995" Y="1.41" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.04999995" Y="1.41" />
+          <Location X="0.1" Y="1.98" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.1" Y="1.98" />
+          <Location X="0.1" Y="1.43" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.1" Y="1.43" />
+          <Location X="0.15" Y="1.96" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.15" Y="1.96" />
+          <Location X="0.15" Y="1.45" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.15" Y="1.45" />
+          <Location X="0.2" Y="1.91" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.2" Y="1.91" />
+          <Location X="0.2" Y="1.49" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.2" Y="1.49" />
+          <Location X="0.25" Y="1.85" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.25" Y="1.85" />
+          <Location X="0.25" Y="1.55" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="1.4" />
+          <Location X="0" Y="0" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.23" Y="1.91" />
+          <Location X="-0.8" Y="1.4" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.22" Y="1.91" />
+          <Location X="0.8" Y="1.4" />
+        </Line>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="Sign">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Component Number="1" Name="">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-1" Y="0.4" />
+          <Location X="1" Y="0.4" />
+        </Line>
+        <Arc Color="Empty">
+          <Location X="0" Y="0" />
+          <Radius>0.4</Radius>
+          <StartAngle>90</StartAngle>
+          <DeltaAngle>360.000010017913</DeltaAngle>
+        </Arc>
+        <Arc Color="Empty">
+          <Location X="0" Y="0" />
+          <Radius>0.2501999</Radius>
+          <StartAngle>92.2906078604695</StartAngle>
+          <DeltaAngle>357.709392139531</DeltaAngle>
+        </Arc>
+        <Arc Color="Empty">
+          <Location X="0" Y="0" />
+          <Radius>0.1</Radius>
+          <StartAngle>90</StartAngle>
+          <DeltaAngle>360.000010017913</DeltaAngle>
+        </Arc>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="Bush">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Component Number="1" Name="">
+        <Arc Color="Empty">
+          <Location X="0.74" Y="0" />
+          <Radius>0.2668333</Radius>
+          <StartAngle>102.994630222064</StartAngle>
+          <DeltaAngle>-205.989260444127</DeltaAngle>
+        </Arc>
+        <Arc Color="Empty">
+          <Location X="0.54" Y="-0.49" />
+          <Radius>0.2692583</Radius>
+          <StartAngle>58.671311842671</StartAngle>
+          <DeltaAngle>-190.491474892617</DeltaAngle>
+        </Arc>
+        <Arc Color="Empty">
+          <Location X="0.04999995" Y="-0.69" />
+          <Radius>0.3201563</Radius>
+          <StartAngle>1.78990860916664</StartAngle>
+          <DeltaAngle>-163.911207426605</DeltaAngle>
+        </Arc>
+        <Arc Color="Empty">
+          <Location X="-0.42" Y="-0.53" />
+          <Radius>0.3052868</Radius>
+          <StartAngle>-58.3924940894867</StartAngle>
+          <DeltaAngle>-153.215008523189</DeltaAngle>
+        </Arc>
+        <Arc Color="Empty">
+          <Location X="-0.61" Y="-0.07999998" />
+          <Radius>0.2983287</Radius>
+          <StartAngle>-103.570432082851</StartAngle>
+          <DeltaAngle>-129.559665717845</DeltaAngle>
+        </Arc>
+        <Arc Color="Empty">
+          <Location X="-0.35" Y="0.67" />
+          <Radius>0.2302173</Radius>
+          <StartAngle>177.510449333252</StartAngle>
+          <DeltaAngle>-145.234803666162</DeltaAngle>
+        </Arc>
+        <Arc Color="Empty">
+          <Location X="0.11" Y="0.74" />
+          <Radius>0.2745906</Radius>
+          <StartAngle>169.508534310925</StartAngle>
+          <DeltaAngle>-158.623016999761</DeltaAngle>
+        </Arc>
+        <Arc Color="Empty">
+          <Location X="0.52" Y="0.52" />
+          <Radius>0.3138471</Radius>
+          <StartAngle>120.650664489951</StartAngle>
+          <DeltaAngle>-180</DeltaAngle>
+        </Arc>
+        <Arc Color="Empty">
+          <Location X="-0.62" Y="0.39" />
+          <Radius>0.2941088</Radius>
+          <StartAngle>-125.311212650016</StartAngle>
+          <DeltaAngle>-152.542100054221</DeltaAngle>
+        </Arc>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="Triangle circle">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Component Number="1" Name="">
+        <Arc Color="Empty">
+          <Location X="0" Y="-0.02830189" />
+          <Radius>0.5377358</Radius>
+          <StartAngle>-90</StartAngle>
+          <DeltaAngle>360.000010017913</DeltaAngle>
+        </Arc>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.9433962" Y="-0.5660378" />
+          <Location X="0.9433962" Y="-0.5660378" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="1.037736" />
+          <Location X="-0.9433962" Y="-0.5660378" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.9433962" Y="-0.5660378" />
+          <Location X="0" Y="1.037736" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0.481132" />
+          <Location X="0" Y="-0.518868" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="-0.518868" />
+          <Location X="-0.0754717" Y="-0.509434" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.0754717" Y="-0.509434" />
+          <Location X="-0.0754717" Y="0.481132" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.0754717" Y="0.481132" />
+          <Location X="-0.1603773" Y="0.4622642" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.1603773" Y="0.4622642" />
+          <Location X="-0.1603773" Y="-0.490566" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.1603773" Y="-0.490566" />
+          <Location X="-0.235849" Y="-0.4622642" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.235849" Y="-0.4622642" />
+          <Location X="-0.235849" Y="0.4339622" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.235849" Y="0.4339622" />
+          <Location X="-0.3207547" Y="0.3679246" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.3207547" Y="0.3679246" />
+          <Location X="-0.3207547" Y="-0.3962264" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.3207547" Y="-0.3962264" />
+          <Location X="-0.3962264" Y="-0.3207547" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.3962264" Y="-0.3207547" />
+          <Location X="-0.3962264" Y="0.2830188" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.3962264" Y="0.2830188" />
+          <Location X="-0.4622641" Y="0.1320755" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.4622641" Y="0.1320755" />
+          <Location X="-0.4622641" Y="-0.1509434" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0.481132" />
+          <Location X="0.07547176" Y="0.471698" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.07547176" Y="0.471698" />
+          <Location X="0.07547176" Y="-0.509434" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.07547176" Y="-0.509434" />
+          <Location X="0.1603774" Y="-0.490566" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.1603774" Y="-0.490566" />
+          <Location X="0.1603774" Y="0.4528302" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.1603774" Y="0.4528302" />
+          <Location X="0.235849" Y="0.4245282" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.235849" Y="0.4245282" />
+          <Location X="0.235849" Y="-0.4528302" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.235849" Y="-0.4528302" />
+          <Location X="0.3207548" Y="-0.4056604" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.3207548" Y="-0.4056604" />
+          <Location X="0.3207548" Y="0.3584906" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.3207548" Y="0.3584906" />
+          <Location X="0.3962264" Y="0.2924528" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.3962264" Y="0.2924528" />
+          <Location X="0.3962264" Y="-0.3207547" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.3962264" Y="-0.3207547" />
+          <Location X="0.4622642" Y="-0.1792453" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.4622642" Y="-0.1792453" />
+          <Location X="0.4622642" Y="0.1698113" />
+        </Line>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="Box">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Component Number="1" Name="">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-1" Y="1" />
+          <Location X="1" Y="1" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="1" Y="1" />
+          <Location X="1" Y="-1" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="1" Y="-1" />
+          <Location X="-1" Y="-1" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-1" Y="-1" />
+          <Location X="-1" Y="1" />
+        </Line>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="Solid box">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Component Number="1" Name="">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-1" Y="1" />
+          <Location X="-1" Y="-1" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-1" Y="-1" />
+          <Location X="1" Y="-1" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="1" Y="-1" />
+          <Location X="1" Y="1" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="1" Y="1" />
+          <Location X="-1" Y="1" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.89" Y="1" />
+          <Location X="-0.89" Y="-0.89" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.89" Y="-0.89" />
+          <Location X="0.89" Y="-0.89" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.89" Y="-0.89" />
+          <Location X="0.89" Y="0.89" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.89" Y="0.89" />
+          <Location X="-0.79" Y="0.89" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.79" Y="0.89" />
+          <Location X="-0.79" Y="-0.79" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.79" Y="-0.79" />
+          <Location X="0.79" Y="-0.79" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.79" Y="-0.79" />
+          <Location X="0.79" Y="0.79" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.79" Y="0.79" />
+          <Location X="-0.68" Y="0.79" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.68" Y="0.79" />
+          <Location X="-0.68" Y="-0.68" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.68" Y="-0.68" />
+          <Location X="0.6799999" Y="-0.68" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.6799999" Y="-0.68" />
+          <Location X="0.6799999" Y="0.6799999" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.6799999" Y="0.6799999" />
+          <Location X="-0.58" Y="0.6799999" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.58" Y="0.6799999" />
+          <Location X="-0.58" Y="-0.58" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.58" Y="-0.58" />
+          <Location X="0.58" Y="-0.58" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.58" Y="-0.58" />
+          <Location X="0.58" Y="0.58" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.58" Y="0.58" />
+          <Location X="-0.47" Y="0.58" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.47" Y="0.58" />
+          <Location X="-0.47" Y="-0.47" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.47" Y="-0.47" />
+          <Location X="0.47" Y="-0.47" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.47" Y="-0.47" />
+          <Location X="0.47" Y="0.47" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.47" Y="0.47" />
+          <Location X="-0.37" Y="0.47" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.37" Y="0.47" />
+          <Location X="-0.37" Y="-0.37" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.37" Y="-0.37" />
+          <Location X="0.37" Y="-0.37" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.37" Y="-0.37" />
+          <Location X="0.37" Y="0.37" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.37" Y="0.37" />
+          <Location X="-0.26" Y="0.37" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.26" Y="0.37" />
+          <Location X="-0.26" Y="-0.26" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.26" Y="-0.26" />
+          <Location X="0.26" Y="-0.26" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.26" Y="-0.26" />
+          <Location X="0.26" Y="0.26" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.26" Y="0.26" />
+          <Location X="-0.16" Y="0.26" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.16" Y="0.26" />
+          <Location X="-0.16" Y="-0.16" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.16" Y="-0.16" />
+          <Location X="0.16" Y="-0.16" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.16" Y="-0.16" />
+          <Location X="0.16" Y="0.16" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.16" Y="0.16" />
+          <Location X="-0.05000001" Y="0.16" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.05000001" Y="0.16" />
+          <Location X="-0.05000001" Y="-0.05000001" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.05000001" Y="-0.05000001" />
+          <Location X="0.04999995" Y="-0.05000001" />
+        </Line>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="Lamp post">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Color Name="DarkRed" Red="139" Green="0" Blue="0" />
+      <Color Name="Yellow" Red="255" Green="255" Blue="0" />
+      <Color Name="DarkRed" Red="139" Green="0" Blue="0" />
+      <Component Number="1" Name="">
+        <Line Color="DarkRed" LineWeight="1">
+          <Location X="-0.4" Y="-1" />
+          <Location X="0.3" Y="-1" />
+        </Line>
+        <Line Color="DarkRed" LineWeight="1">
+          <Location X="-0.06" Y="-1" />
+          <Location X="-0.06" Y="0.65" />
+        </Line>
+        <Line Color="DarkRed" LineWeight="1">
+          <Location X="0.62" Y="0.5" />
+          <Location X="0.3" Y="0.5" />
+        </Line>
+        <Line Color="Yellow" LineWeight="1">
+          <Location X="0.3099999" Y="0.47" />
+          <Location X="0.16" Y="0.3" />
+        </Line>
+        <Line Color="Yellow" LineWeight="1">
+          <Location X="0.4" Y="0.47" />
+          <Location X="0.34" Y="0.28" />
+        </Line>
+        <Line Color="Yellow" LineWeight="1">
+          <Location X="0.51" Y="0.47" />
+          <Location X="0.55" Y="0.28" />
+        </Line>
+        <Line Color="Yellow" LineWeight="1">
+          <Location X="0.61" Y="0.47" />
+          <Location X="0.72" Y="0.3099999" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.4" Y="-0.99" />
+          <Location X="0.3" Y="-0.99" />
+        </Line>
+        <Line Color="Yellow" LineWeight="1">
+          <Location X="0.17" Y="0.3099999" />
+          <Location X="0.3200001" Y="0.48" />
+        </Line>
+        <Line Color="Yellow" LineWeight="1">
+          <Location X="0.39" Y="0.47" />
+          <Location X="0.33" Y="0.28" />
+        </Line>
+        <Line Color="Yellow" LineWeight="1">
+          <Location X="0.5" Y="0.47" />
+          <Location X="0.54" Y="0.28" />
+        </Line>
+        <Line Color="Yellow" LineWeight="1">
+          <Location X="0.6" Y="0.47" />
+          <Location X="0.71" Y="0.3099999" />
+        </Line>
+        <Arc Color="DarkRed">
+          <Location X="0.2" Y="0.66" />
+          <Radius>0.2601923</Radius>
+          <StartAngle>-177.79740436046</StartAngle>
+          <DeltaAngle>-184.323690164916</DeltaAngle>
+        </Arc>
+        <Arc Color="DarkRed">
+          <Location X="0.46" Y="0.49" />
+          <Radius>0.1603123</Radius>
+          <StartAngle>176.423670940322</StartAngle>
+          <DeltaAngle>-172.847339222987</DeltaAngle>
+        </Arc>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="Tree 1">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Color Name="Green" Red="0" Green="128" Blue="0" />
+      <Component Number="1" Name="">
+        <Line Color="Green" LineWeight="1">
+          <Location X="-0.00999999" Y="0" />
+          <Location X="-0.00999999" Y="0.95" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="-0.00999999" Y="0.74" />
+          <Location X="0.2" Y="0.84" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="-0.00999999" Y="0.3199999" />
+          <Location X="0.42" Y="0.53" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="0.42" Y="0.53" />
+          <Location X="0.52" Y="0.74" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="0.42" Y="0.53" />
+          <Location X="0.62" Y="0.53" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="-0.00999999" Y="0" />
+          <Location X="0.74" Y="0" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="0.74" Y="0" />
+          <Location X="0.83" Y="0.11" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="0.9400001" Y="-0.1" />
+          <Location X="0.74" Y="0" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="0.42" Y="0" />
+          <Location X="0.52" Y="-0.21" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="0.2" Y="0" />
+          <Location X="0.52" Y="0.3199999" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="-0.00999999" Y="0" />
+          <Location X="0.42" Y="-0.84" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="0.42" Y="-0.84" />
+          <Location X="0.74" Y="-0.94" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="0.29" Y="-0.99" />
+          <Location X="0.42" Y="-0.84" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="0.2" Y="-0.42" />
+          <Location X="0.62" Y="-0.52" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="0.3100001" Y="-0.63" />
+          <Location X="0.1" Y="-0.84" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="-0.00999999" Y="0" />
+          <Location X="-0.09999996" Y="-0.52" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="-0.09999996" Y="-0.52" />
+          <Location X="-0.32" Y="-0.73" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="-0.09999996" Y="-0.84" />
+          <Location X="-0.09999996" Y="-0.52" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="-0.00999999" Y="0" />
+          <Location X="-1.01" Y="-0.79" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="-0.6799999" Y="-0.52" />
+          <Location X="-1.01" Y="-0.6" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="-0.32" Y="-0.25" />
+          <Location X="-0.42" Y="-0.52" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="-0.64" Y="-0.5" />
+          <Location X="-0.64" Y="-0.94" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="-0.00999999" Y="0" />
+          <Location X="-0.85" Y="0.53" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="-0.85" Y="0.53" />
+          <Location X="-1" Y="0.51" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="-0.85" Y="0.53" />
+          <Location X="-0.85" Y="0.84" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="-0.53" Y="0.3199999" />
+          <Location X="-0.42" Y="0.74" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="-0.42" Y="0.74" />
+          <Location X="-0.53" Y="0.84" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="-0.32" Y="0.95" />
+          <Location X="-0.42" Y="0.74" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="-0.48" Y="0.53" />
+          <Location X="-0.32" Y="0.59" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="-0.32" Y="0.21" />
+          <Location X="-0.74" Y="-0.1" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="-0.74" Y="-0.1" />
+          <Location X="-0.94" Y="0" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="-0.85" Y="-0.42" />
+          <Location X="-0.74" Y="-0.1" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="-0.53" Y="0.05999994" />
+          <Location X="-0.74" Y="0.21" />
+        </Line>
+        <Line Color="Green" LineWeight="1">
+          <Location X="-0.00999999" Y="0.53" />
+          <Location X="-0.22" Y="0.74" />
+        </Line>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="Cross circle">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Component Number="1" Name="">
+        <Arc Color="Empty">
+          <Location X="0" Y="0" />
+          <Radius>0.9</Radius>
+          <StartAngle>90</StartAngle>
+          <DeltaAngle>360.000010017913</DeltaAngle>
+        </Arc>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-1" Y="0" />
+          <Location X="1" Y="0" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="-1" />
+          <Location X="0" Y="1" />
+        </Line>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="Small Box">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Component Number="1" Name="">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.5" Y="0.5" />
+          <Location X="0.5" Y="0.5" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.5" Y="0.5" />
+          <Location X="0.5" Y="-0.5" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.5" Y="-0.5" />
+          <Location X="-0.5" Y="-0.5" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.5" Y="-0.5" />
+          <Location X="-0.5" Y="0.5" />
+        </Line>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="Dot">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Variable" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Component Number="1" Name="">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0.00999999" />
+          <Location X="0" Y="0" />
+        </Line>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="Arrow head">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Component Number="1" Name="">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0" />
+          <Location X="0.6799999" Y="-2" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.68" Y="-2" />
+          <Location X="0" Y="0" />
+        </Line>
+        <Arc Color="Empty">
+          <Location X="0" Y="-2.58" />
+          <Radius>0.8937561</Radius>
+          <StartAngle>139.53777361948</StartAngle>
+          <DeltaAngle>-99.0755447592963</DeltaAngle>
+        </Arc>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="-0.17" />
+          <Location X="0" Y="-1.58" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="-1.58" />
+          <Location X="-0.11" Y="-1.6" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.11" Y="-1.6" />
+          <Location X="-0.11" Y="-0.54" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.11" Y="-0.54" />
+          <Location X="-0.21" Y="-0.86" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.21" Y="-0.86" />
+          <Location X="-0.21" Y="-1.6" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.21" Y="-1.6" />
+          <Location X="-0.32" Y="-1.63" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.32" Y="-1.63" />
+          <Location X="-0.32" Y="-1.15" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.32" Y="-1.15" />
+          <Location X="-0.42" Y="-1.45" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.42" Y="-1.45" />
+          <Location X="-0.42" Y="-1.68" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.42" Y="-1.68" />
+          <Location X="-0.57" Y="-1.82" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.57" Y="-1.82" />
+          <Location X="-0.42" Y="-1.46" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.11" Y="-1.6" />
+          <Location X="0.11" Y="-0.55" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.11" Y="-0.55" />
+          <Location X="0.21" Y="-0.87" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.21" Y="-0.87" />
+          <Location X="0.21" Y="-1.61" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.21" Y="-1.61" />
+          <Location X="0.3200001" Y="-1.64" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.3200001" Y="-1.64" />
+          <Location X="0.3200001" Y="-1.17" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.3200001" Y="-1.17" />
+          <Location X="0.42" Y="-1.47" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.42" Y="-1.47" />
+          <Location X="0.42" Y="-1.68" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.42" Y="-1.68" />
+          <Location X="0.55" Y="-1.79" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.55" Y="-1.79" />
+          <Location X="0.42" Y="-1.48" />
+        </Line>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="Box with dot">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Component Number="1" Name="">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-1" Y="1" />
+          <Location X="1" Y="1" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="1" Y="1" />
+          <Location X="1" Y="-1" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="1" Y="-1" />
+          <Location X="-1" Y="-1" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-1" Y="-1" />
+          <Location X="-1" Y="1" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.1" Y="0.1" />
+          <Location X="0.1" Y="0.1" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.1" Y="0.1" />
+          <Location X="0.1" Y="-0.1" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.1" Y="-0.1" />
+          <Location X="-0.1" Y="-0.1" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.1" Y="-0.1" />
+          <Location X="-0.1" Y="0.1" />
+        </Line>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="Circular nth pt">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Component Number="1" Name="">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.3200001" Y="-0.5" />
+          <Location X="-0.31" Y="-0.5" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.31" Y="-0.5" />
+          <Location X="-0.31" Y="-0.08999997" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.31" Y="-0.08999997" />
+          <Location X="-0.63" Y="-0.08999997" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.63" Y="-0.08999997" />
+          <Location X="0" Y="0.66" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.3200001" Y="-0.08999997" />
+          <Location X="0.3200001" Y="-0.5" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0.66" />
+          <Location X="0.63" Y="-0.08999997" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.63" Y="-0.08999997" />
+          <Location X="0.3200001" Y="-0.08999997" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.16" Y="-0.39" />
+          <Location X="-0.16" Y="0.23" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.16" Y="0.23" />
+          <Location X="0.16" Y="-0.39" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.16" Y="-0.39" />
+          <Location X="0.16" Y="0.23" />
+        </Line>
+        <Arc Color="Empty">
+          <Location X="0" Y="0" />
+          <Radius>1</Radius>
+          <StartAngle>90</StartAngle>
+          <DeltaAngle>360.000010017913</DeltaAngle>
+        </Arc>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="Dia cross">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Component Number="1" Name="">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-1" Y="1" />
+          <Location X="1" Y="-1" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-1" Y="-1" />
+          <Location X="1" Y="1" />
+        </Line>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="Event Marker">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Color Name="Blue" Red="0" Green="0" Blue="255" />
+      <Color Name="Black" Red="0" Green="0" Blue="0" />
+      <Component Number="1" Name="">
+        <Line Color="Blue" LineWeight="1">
+          <Location X="0" Y="0.6" />
+          <Location X="0" Y="-0.6" />
+        </Line>
+        <Line Color="Blue" LineWeight="1">
+          <Location X="-0.5" Y="0" />
+          <Location X="0.5" Y="0" />
+        </Line>
+        <Line Color="Black" LineWeight="1">
+          <Location X="-0.1" Y="0.1" />
+          <Location X="-0.1" Y="-0.1" />
+        </Line>
+        <Line Color="Black" LineWeight="1">
+          <Location X="-0.1" Y="-0.1" />
+          <Location X="0.1" Y="-0.1" />
+        </Line>
+        <Line Color="Black" LineWeight="1">
+          <Location X="0.1" Y="-0.1" />
+          <Location X="0.1" Y="0.1" />
+        </Line>
+        <Line Color="Black" LineWeight="1">
+          <Location X="0.1" Y="0.1" />
+          <Location X="-0.1" Y="0.1" />
+        </Line>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="Highway">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Component Number="1" Name="">
+        <Arc Color="Empty">
+          <Location X="1.51" Y="0.39" />
+          <Radius>0.6754258</Radius>
+          <StartAngle>-154.573129273951</StartAngle>
+          <DeltaAngle>-66.8505398945993</DeltaAngle>
+        </Arc>
+        <Arc Color="Empty">
+          <Location X="0.36" Y="-0.24" />
+          <Radius>0.6381223</Radius>
+          <StartAngle>32.1957382958361</StartAngle>
+          <DeltaAngle>-132.099922844788</DeltaAngle>
+        </Arc>
+        <Arc Color="Empty">
+          <Location X="0.22" Y="-1.11" />
+          <Radius>0.2459675</Radius>
+          <StartAngle>153.434951927553</StartAngle>
+          <DeltaAngle>-68.0088688439314</DeltaAngle>
+        </Arc>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="1" Y="0.84" />
+          <Location X="0.8" Y="1" />
+        </Line>
+        <Arc Color="Empty">
+          <Location X="0.4" Y="1.71" />
+          <Radius>0.8149233</Radius>
+          <StartAngle>-60.6039499219744</StartAngle>
+          <DeltaAngle>-58.7921001560512</DeltaAngle>
+        </Arc>
+        <Arc Color="Empty">
+          <Location X="-0.4" Y="1.71" />
+          <Radius>0.8149233</Radius>
+          <StartAngle>-60.6039499219744</StartAngle>
+          <DeltaAngle>-58.7921028944006</DeltaAngle>
+        </Arc>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.8" Y="1" />
+          <Location X="-1" Y="0.84" />
+        </Line>
+        <Arc Color="Empty">
+          <Location X="-1.47" Y="0.4" />
+          <Radius>0.6438168</Radius>
+          <StartAngle>43.1118157832311</StartAngle>
+          <DeltaAngle>-70.8703526185504</DeltaAngle>
+        </Arc>
+        <Arc Color="Empty">
+          <Location X="-0.22" Y="-1.11" />
+          <Radius>0.2507987</Radius>
+          <StartAngle>94.5739169163783</StartAngle>
+          <DeltaAngle>-68.0088688439314</DeltaAngle>
+        </Arc>
+        <Arc Color="Empty">
+          <Location X="-0.36" Y="-0.23" />
+          <Radius>0.6413267</Radius>
+          <StartAngle>-79.2157013851519</StartAngle>
+          <DeltaAngle>-132.213868290707</DeltaAngle>
+        </Arc>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.84" Y="0.48" />
+          <Location X="0.83" Y="0.48" />
+        </Line>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="Interstate">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Color Name="Red" Red="255" Green="0" Blue="0" />
+      <Color Name="Red" Red="255" Green="0" Blue="0" />
+      <Color Name="Blue" Red="0" Green="0" Blue="255" />
+      <Component Number="1" Name="">
+        <Arc Color="Red">
+          <Location X="0.4" Y="1.7" />
+          <Radius>0.8062258</Radius>
+          <StartAngle>-60.2551218554527</StartAngle>
+          <DeltaAngle>-59.4897562890947</DeltaAngle>
+        </Arc>
+        <Arc Color="Red">
+          <Location X="-0.4" Y="1.7" />
+          <Radius>0.8062258</Radius>
+          <StartAngle>-60.2551218554527</StartAngle>
+          <DeltaAngle>-59.4897590474402</DeltaAngle>
+        </Arc>
+        <Line Color="Red" LineWeight="1">
+          <Location X="-0.98" Y="0.47" />
+          <Location X="0.98" Y="0.47" />
+        </Line>
+        <Arc Color="Blue">
+          <Location X="-0.33" Y="0.28" />
+          <Radius>1.321855</Radius>
+          <StartAngle>-75.5432449908448</StartAngle>
+          <DeltaAngle>83.8583731416257</DeltaAngle>
+        </Arc>
+        <Arc Color="Red">
+          <Location X="-0.18" Y="0.39" />
+          <Radius>1.152779</Radius>
+          <StartAngle>3.97938445717342</StartAngle>
+          <DeltaAngle>27.9207741264601</DeltaAngle>
+        </Arc>
+        <Arc Color="Red">
+          <Location X="0.27" Y="0.34" />
+          <Radius>1.257179</Radius>
+          <StartAngle>148.332784337637</StartAngle>
+          <DeltaAngle>25.7297996912668</DeltaAngle>
+        </Arc>
+        <Arc Color="Blue">
+          <Location X="0.34" Y="0.29" />
+          <Radius>1.332216</Radius>
+          <StartAngle>172.234831333376</StartAngle>
+          <DeltaAngle>82.9997437529149</DeltaAngle>
+        </Arc>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="Left pointer">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Component Number="1" Name="">
+        <Arc Color="Empty">
+          <Location X="-2.38" Y="-2.53" />
+          <Radius>3.473514</Radius>
+          <StartAngle>46.7498342948283</StartAngle>
+          <DeltaAngle>-37.9660193674881</DeltaAngle>
+        </Arc>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0" />
+          <Location X="0.07" Y="-0.13" />
+        </Line>
+        <Arc Color="Empty">
+          <Location X="0.11" Y="-0.11" />
+          <Radius>0.04472135</Radius>
+          <StartAngle>-153.434970167268</StartAngle>
+          <DeltaAngle>-143.130098085297</DeltaAngle>
+        </Arc>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.07" Y="-0.11" />
+          <Location X="0.03" Y="-0.03999996" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.03" Y="-0.03999996" />
+          <Location X="0.07" Y="-0.08000004" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.08" Y="-0.07000005" />
+          <Location X="0.04" Y="-0.02999997" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.04" Y="-0.02999997" />
+          <Location X="0.09" Y="-0.05999994" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.09" Y="-0.05999994" />
+          <Location X="0" Y="0" />
+        </Line>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="North point 1">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Component Number="1" Name="">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0.95" />
+          <Location X="-0.09999996" Y="-0.9399999" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.09999996" Y="-0.9399999" />
+          <Location X="0.11" Y="-0.9399999" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.11" Y="-0.9399999" />
+          <Location X="0" Y="0.95" />
+        </Line>
+        <Arc Color="Empty">
+          <Location X="0.00999999" Y="-0.53" />
+          <Radius>0.3255764</Radius>
+          <StartAngle>79.380333769768</StartAngle>
+          <DeltaAngle>-151.501632506738</DeltaAngle>
+        </Arc>
+        <Arc Color="Empty">
+          <Location X="-0.00999999" Y="-0.53" />
+          <Radius>0.3228002</Radius>
+          <StartAngle>-106.189202406032</StartAngle>
+          <DeltaAngle>-153.191151983175</DeltaAngle>
+        </Arc>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.3200001" Y="-0.52" />
+          <Location X="0.4200001" Y="-0.52" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.3099999" Y="-0.52" />
+          <Location X="-0.42" Y="-0.52" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.16" Y="-0.3099999" />
+          <Location X="-0.16" Y="-0.73" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.16" Y="-0.73" />
+          <Location X="-0.06999993" Y="-0.73" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.06999993" Y="-0.73" />
+          <Location X="-0.06999993" Y="-0.3099999" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.06999993" Y="-0.3099999" />
+          <Location X="-0.16" Y="-0.3099999" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.1600001" Y="-0.73" />
+          <Location X="0.1600001" Y="-0.3099999" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.1600001" Y="-0.3099999" />
+          <Location X="0.08000004" Y="-0.3099999" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.08000004" Y="-0.3099999" />
+          <Location X="0.08000004" Y="-0.73" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.08000004" Y="-0.73" />
+          <Location X="0.1600001" Y="-0.73" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.16" Y="-0.3099999" />
+          <Location X="0.08000004" Y="-0.73" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.06999993" Y="-0.3099999" />
+          <Location X="0.1600001" Y="-0.73" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="-1.05" />
+          <Location X="0" Y="0.95" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.1199999" Y="-0.3199999" />
+          <Location X="-0.1199999" Y="-0.7199999" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.11" Y="-0.7199999" />
+          <Location X="-0.11" Y="-0.3199999" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.09999996" Y="-0.3199999" />
+          <Location X="-0.09999996" Y="-0.7199999" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.08999997" Y="-0.7199999" />
+          <Location X="-0.08999997" Y="-0.3199999" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.1399999" Y="-0.3199999" />
+          <Location X="-0.1399999" Y="-0.7199999" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.1299999" Y="-0.7199999" />
+          <Location X="-0.1299999" Y="-0.3199999" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.1500001" Y="-0.3199999" />
+          <Location X="0.1500001" Y="-0.7199999" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.1400001" Y="-0.7199999" />
+          <Location X="0.1400001" Y="-0.3199999" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.13" Y="-0.3199999" />
+          <Location X="0.13" Y="-0.7199999" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.12" Y="-0.7199999" />
+          <Location X="0.12" Y="-0.3199999" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.11" Y="-0.3199999" />
+          <Location X="0.11" Y="-0.7199999" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.1" Y="-0.7199999" />
+          <Location X="0.1" Y="-0.3199999" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.1299999" Y="-0.34" />
+          <Location X="0.08000004" Y="-0.7199999" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.09000003" Y="-0.7199999" />
+          <Location X="-0.1199999" Y="-0.3199999" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.11" Y="-0.3199999" />
+          <Location X="0.11" Y="-0.7199999" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.12" Y="-0.7199999" />
+          <Location X="-0.08999997" Y="-0.3199999" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.07999992" Y="-0.3199999" />
+          <Location X="0.1500001" Y="-0.7199999" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.1400001" Y="-0.7199999" />
+          <Location X="-0.07999992" Y="-0.3199999" />
+        </Line>
+        <Arc Color="Empty">
+          <Location X="-0.00999999" Y="-0.53" />
+          <Radius>0.3324154</Radius>
+          <StartAngle>-105.708634506638</StartAngle>
+          <DeltaAngle>-153.986529952897</DeltaAngle>
+        </Arc>
+        <Arc Color="Empty">
+          <Location X="0.00999999" Y="-0.53" />
+          <Radius>0.3354102</Radius>
+          <StartAngle>79.6951444243165</StartAngle>
+          <DeltaAngle>-152.341114774793</DeltaAngle>
+        </Arc>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.08000004" Y="-0.3099999" />
+          <Location X="0.08000004" Y="-0.7199999" />
+        </Line>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="North point 2">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Component Number="1" Name="">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.3" Y="-0.54" />
+          <Location X="0.3" Y="-0.54" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.14" Y="-0.08999997" />
+          <Location X="-0.11" Y="0.11" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.11" Y="0.11" />
+          <Location X="0.13" Y="0.01000005" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.14" Y="0.11" />
+          <Location X="0.12" Y="-0.08999997" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.12" Y="-0.08999997" />
+          <Location X="-0.13" Y="0" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0.5000001" />
+          <Location X="-0.08999997" Y="0.42" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="1.16" />
+          <Location X="-0.08999997" Y="0.42" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0.5000001" />
+          <Location X="0.09000003" Y="0.42" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.09000003" Y="0.42" />
+          <Location X="0" Y="1.16" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="1.08" />
+          <Location X="0" Y="-0.84" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.11" Y="0.09000003" />
+          <Location X="0.13" Y="-0.00999999" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.13" Y="-0.02999997" />
+          <Location X="-0.12" Y="0.07000005" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.12" Y="0.04000002" />
+          <Location X="0.13" Y="-0.04999995" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.12" Y="-0.06999999" />
+          <Location X="-0.12" Y="0.02000004" />
+        </Line>
+        <Arc Color="Empty">
+          <Location X="0" Y="-0.54" />
+          <Radius>0.2</Radius>
+          <StartAngle>90</StartAngle>
+          <DeltaAngle>360.000010017913</DeltaAngle>
+        </Arc>
+        <Arc Color="Empty">
+          <Location X="0" Y="-0.54" />
+          <Radius>0.09999999</Radius>
+          <StartAngle>90</StartAngle>
+          <DeltaAngle>360.000010017913</DeltaAngle>
+        </Arc>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="Right pointer">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Component Number="1" Name="">
+        <Arc Color="Empty">
+          <Location X="2.32" Y="-2.5" />
+          <Radius>3.40689</Radius>
+          <StartAngle>171.560708433756</StartAngle>
+          <DeltaAngle>-38.6993888976125</DeltaAngle>
+        </Arc>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.13" Y="-0.07000005" />
+          <Location X="0" Y="0" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0" />
+          <Location X="-0.07000005" Y="-0.13" />
+        </Line>
+        <Arc Color="Empty">
+          <Location X="-0.11" Y="-0.11" />
+          <Radius>0.04472132</Radius>
+          <StartAngle>116.565051177078</StartAngle>
+          <DeltaAngle>-143.130102354156</DeltaAngle>
+        </Arc>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.08000004" Y="-0.07000005" />
+          <Location X="-0.03999996" Y="-0.02999997" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.03999996" Y="-0.02999997" />
+          <Location X="-0.11" Y="-0.07000005" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.07000005" Y="-0.08000004" />
+          <Location X="-0.02999997" Y="-0.03999996" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.02999997" Y="-0.03999996" />
+          <Location X="-0.07000005" Y="-0.11" />
+        </Line>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="Solid triangle">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Component Number="1" Name="">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="0.9" />
+          <Location X="1" Y="-0.8" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="1" Y="-0.8" />
+          <Location X="-1" Y="-0.8" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-1" Y="-0.8" />
+          <Location X="0" Y="0.9" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.9" Y="-0.8" />
+          <Location X="0.9" Y="-0.7" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.8" Y="-0.8" />
+          <Location X="0.8" Y="-0.5" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.7" Y="-0.8" />
+          <Location X="0.7" Y="-0.3" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.6" Y="-0.8" />
+          <Location X="0.6" Y="-0.2" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.5" Y="-0.8" />
+          <Location X="0.5" Y="0" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.4" Y="-0.8" />
+          <Location X="0.4" Y="0.2" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.3" Y="-0.8" />
+          <Location X="0.3" Y="0.4" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.2" Y="-0.8" />
+          <Location X="0.2" Y="0.5" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0.1" Y="-0.8" />
+          <Location X="0.1" Y="0.7" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="-0.8" />
+          <Location X="0" Y="0.9" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.1" Y="-0.8" />
+          <Location X="-0.1" Y="0.7" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.2" Y="-0.8" />
+          <Location X="-0.2" Y="0.5" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.3" Y="-0.8" />
+          <Location X="-0.3" Y="0.4" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.4" Y="-0.8" />
+          <Location X="-0.4" Y="0.2" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.5" Y="-0.8" />
+          <Location X="-0.5" Y="0" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.6" Y="-0.8" />
+          <Location X="-0.6" Y="-0.1" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.7" Y="-0.8" />
+          <Location X="-0.7" Y="-0.3" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.8" Y="-0.8" />
+          <Location X="-0.8" Y="-0.5" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.9" Y="-0.8" />
+          <Location X="-0.9" Y="-0.7" />
+        </Line>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="Triangle">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Component Number="1" Name="">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.9433962" Y="-0.5660378" />
+          <Location X="0.9433962" Y="-0.5660378" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-0.9433962" Y="-0.5660378" />
+          <Location X="0" Y="1.037736" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="1.037736" />
+          <Location X="0.9433962" Y="-0.5660378" />
+        </Line>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="Triangle with dot">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Component Number="1" Name="">
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-1" Y="-0.6" />
+          <Location X="0" Y="1.1" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="0" Y="1.1" />
+          <Location X="1" Y="-0.6" />
+        </Line>
+        <Line Color="Empty" LineWeight="1">
+          <Location X="-1" Y="-0.6" />
+          <Location X="1" Y="-0.6" />
+        </Line>
+        <Arc Color="Empty">
+          <Location X="0" Y="0" />
+          <Radius>0.09999996</Radius>
+          <StartAngle>90</StartAngle>
+          <DeltaAngle>270</DeltaAngle>
+        </Arc>
+        <Arc Color="Empty">
+          <Location X="0" Y="0" />
+          <Radius>0.1</Radius>
+          <StartAngle>0</StartAngle>
+          <DeltaAngle>90</DeltaAngle>
+        </Arc>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+    <SymbolDefinition Name="Cross">
+      <Units Reference="Paper" Length="Metric" />
+      <Scale Size="Variable" Shape="Fixed" />
+      <Rotation Type="Allow" />
+      <Dimension First="Length" Second="Length" />
+      <Color Name="BlueViolet" Red="138" Green="43" Blue="226" />
+      <Component Number="1" Name="Cross">
+        <Line Color="BlueViolet" LineWeight="1">
+          <Location X="-2" Y="-2" />
+          <Location X="2" Y="2" />
+        </Line>
+        <Line Color="BlueViolet" LineWeight="1">
+          <Location X="-2" Y="2" />
+          <Location X="2" Y="-2" />
+        </Line>
+      </Component>
+      <Component Number="2" Name="" />
+    </SymbolDefinition>
+  </SymbolDefinitions>
+  <LayerDefinitions>
+    <LayerDefinition>
+      <Name>Pipeline</Name>
+      <Color>FFFFFFFF</Color>
+      <LineStyleName>Solid</LineStyleName>
+    </LayerDefinition>
+    <LayerDefinition>
+      <Name>Utility</Name>
+      <Color>FFFFFFFF</Color>
+      <LineStyleName>Solid</LineStyleName>
+    </LayerDefinition>
+    <LayerDefinition>
+      <Name>Roadway</Name>
+      <Color>FFFFFFFF</Color>
+      <LineStyleName>Solid</LineStyleName>
+    </LayerDefinition>
+    <LayerDefinition>
+      <Name>Earth</Name>
+      <Color>FFFFFFFF</Color>
+      <LineStyleName>Solid</LineStyleName>
+    </LayerDefinition>
+    <LayerDefinition>
+      <Name>Landscape</Name>
+      <Color>FFFFFFFF</Color>
+      <LineStyleName>Solid</LineStyleName>
+    </LayerDefinition>
+    <LayerDefinition>
+      <Name>Structures</Name>
+      <Color>FFFFFFFF</Color>
+      <LineStyleName>Solid</LineStyleName>
+    </LayerDefinition>
+    <LayerDefinition>
+      <Name>UtilityStorm</Name>
+      <Color>FFFFFFFF</Color>
+      <LineStyleName>Solid</LineStyleName>
+    </LayerDefinition>
+    <LayerDefinition>
+      <Name>UtilityWater</Name>
+      <Color>FFFFFFFF</Color>
+      <LineStyleName>Solid</LineStyleName>
+    </LayerDefinition>
+    <LayerDefinition>
+      <Name>UtilitySanitary</Name>
+      <Color>FFFFFFFF</Color>
+      <LineStyleName>Solid</LineStyleName>
+    </LayerDefinition>
+    <LayerDefinition>
+      <Name>ROWStructures</Name>
+      <Color>FFFFFFFF</Color>
+      <LineStyleName>Solid</LineStyleName>
+    </LayerDefinition>
+    <LayerDefinition>
+      <Name>UtilityElec</Name>
+      <Color>FFFFFFFF</Color>
+      <LineStyleName>Solid</LineStyleName>
+    </LayerDefinition>
+    <LayerDefinition>
+      <Name>SurveyControl</Name>
+      <Color>FFFFFFFF</Color>
+      <LineStyleName>Solid</LineStyleName>
+    </LayerDefinition>
+    <LayerDefinition>
+      <Name>Points</Name>
+      <Color>FFFFFFFF</Color>
+      <LineStyleName>Solid</LineStyleName>
+    </LayerDefinition>
+    <LayerDefinition>
+      <Name>0</Name>
+      <Color>FFFFFFFF</Color>
+      <LineStyleName>Solid</LineStyleName>
+    </LayerDefinition>
+  </LayerDefinitions>
+  <ControlCodeDefinitions>
+    <ControlCodeDefinition Type="NewArc" Description="StartNonTangentArc" Code="SNTA" />
+    <ControlCodeDefinition Type="EndOnArc" Description="EndNonTangentArc" Code="ENTA" />
+    <ControlCodeDefinition Type="EndArc" Description="EndTangentArc" Code="ETA" />
+    <ControlCodeDefinition Type="StartArc" Description="StartTangentArc" Code="STA" />
+    <ControlCodeDefinition Type="Close" Description="CloseLine" Code="CL" />
+    <ControlCodeDefinition Type="End" Description="EndLine" Code="END" />
+    <ControlCodeDefinition Type="Start" Description="StartLine" Code="ST" />
+    <ControlCodeDefinition Type="NoJoin" Description="DoNotJoinLine" Code="IG" />
+    <ControlCodeDefinition Type="JoinToPoint" Description="JoinToPointNumber" Code="JPT" />
+  </ControlCodeDefinitions>
+  <FeatureDefinitions>
+    <PointFeatureDefinition Code="PLE" Name="PipelineExposed" Category="Utility" Color="FE000000" Layer="Pipeline">
+      <Attributes>
+        <PhotoAttribute Name="Photo" EntryMethod="Optional" />
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>0.5</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>Symbol</Name>
+          <Color>FF008000</Color>
+          <SymbolName>Cross</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description />
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <PointFeatureDefinition Code="CMP" Name="CommPedistal" Category="Utility" Color="FE000000" Layer="UtilityElec">
+      <Attributes>
+        <PhotoAttribute Name="Photo" EntryMethod="Optional" />
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>0.5</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>Symbol</Name>
+          <Color>FFFFFF00</Color>
+          <SymbolName>Solid circle</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description />
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <PointFeatureDefinition Code="GWA" Name="GuyWireAnchor" Category="Utility" Color="FE000000" Layer="Utility">
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>1</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>Symbol</Name>
+          <Color>FFFFFF00</Color>
+          <SymbolName>Cross</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description />
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <LineFeatureDefinition Code="BA" Name="BridgeAbutment" Category="Roads" Color="FFD3D3D3" Layer="Roadway" FieldLineStyle="Solid" LineStyleName="Solid" LineStyleScale="1" />
+    <PointFeatureDefinition Code="DISK" Name="SvyDisk" Category="SurveyControl" Color="FE000000" Layer="SurveyControl">
+      <Attributes>
+        <ListAttribute Name="TypeOfDisk" Description="Type Of Disk" EntryMethod="Optional" DefaultItemIndex="6">
+          <ListItems>
+            <Item>Triangluation</Item>
+            <Item>Reference</Item>
+            <Item>Traverse</Item>
+            <Item>Benchmark</Item>
+            <Item>Gravity</Item>
+            <Item>ROW</Item>
+            <Item>Other</Item>
+          </ListItems>
+        </ListAttribute>
+        <ListAttribute Name="Agency" Description="Agency Cast In Mark" EntryMethod="Optional" DefaultItemIndex="5">
+          <ListItems>
+            <Item>NGS</Item>
+            <Item>USCGS</Item>
+            <Item>USGS</Item>
+            <Item>USFS</Item>
+            <Item>State DOT</Item>
+            <Item>other</Item>
+          </ListItems>
+        </ListAttribute>
+        <StringAttribute Name="Name, Year etc" Description="Stamping On Disk" EntryMethod="Required" />
+        <PhotoAttribute Name="Photo" EntryMethod="OfficeUseOnly" />
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>0.5</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>svy disk</Name>
+          <Color>FFFF0000</Color>
+          <SymbolName>Double triangle</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description>svy disk</Description>
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <PointFeatureDefinition Code="NG" Name="NaturalGround" Category="Earth" Color="FE000000" Layer="Earth">
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>0.4</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>ng</Name>
+          <Color>FF008000</Color>
+          <SymbolName>Dia cross</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description>ng</Description>
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <PointFeatureDefinition Code="SPHD" Name="SprinklerHead" Category="Landscape" Color="FE000000" Layer="Landscape">
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>0.5</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>Shead</Name>
+          <Color>FFA52A2A</Color>
+          <SymbolName>Single circle</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description>sprinkler head</Description>
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <LineFeatureDefinition Code="TOEL" Name="ToeLevee" Category="Earth" Color="FF00FF00" Layer="Earth" FieldLineStyle="Solid" LineStyleName="Solid" LineStyleScale="1" />
+    <LineFeatureDefinition Code="TOPD" Name="TopDitch" Category="Earth" Color="FF00FF00" Layer="Earth" FieldLineStyle="Solid" LineStyleName="Solid" LineStyleScale="1" />
+    <LineFeatureDefinition Code="AW" Name="Awning" Category="Structures" Color="FF808080" Layer="Structures" FieldLineStyle="Solid" LineStyleName="Solid" LineStyleScale="1" />
+    <LineFeatureDefinition Code="STMP" Name="StormPipe" Category="Roads" Color="FFFFFFFF" Layer="UtilityStorm" FieldLineStyle="Solid" LineStyleName="Pipe line" LineStyleScale="12">
+      <Attributes>
+        <IntegerAttribute Name="Size" Description="Size of Pipe in cm" EntryMethod="Optional" DefaultValue="50" MinimumValue="1" MaximumValue="600" />
+        <ListAttribute Name="MaterialType" Description="Material Type" EntryMethod="Optional">
+          <ListItems>
+            <Item>RCP</Item>
+            <Item>PVC</Item>
+            <Item>CSP</Item>
+            <Item>Steel</Item>
+            <Item>Other</Item>
+          </ListItems>
+        </ListAttribute>
+        <PhotoAttribute Name="Photo" Description="Picture of the Pipe" EntryMethod="Optional" />
+      </Attributes>
+    </LineFeatureDefinition>
+    <PointFeatureDefinition Code="SMH" Name="SanitaryMH" Category="Utility" Color="FF008000" Layer="UtilitySanitary">
+      <Attributes>
+        <PhotoAttribute Name="Photo" EntryMethod="Optional" />
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>1</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>smh</Name>
+          <Color>FF00FFFF</Color>
+          <SymbolName>Double circle</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description>sanitary MH</Description>
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <LineFeatureDefinition Code="ACP" Name="AcPad" Category="Structures" Color="FF808080" Layer="Structures" FieldLineStyle="Solid" LineStyleName="Solid" LineStyleScale="1" />
+    <LineFeatureDefinition Code="GR" Name="GuardRail" Category="Roads" Color="FFA52A2A" Layer="ROWStructures" FieldLineStyle="Solid" LineStyleName="Gate" LineStyleScale="5" />
+    <LineFeatureDefinition Code="RPR" Name="RipRap" Category="Structures" Color="FF808080" Layer="ROWStructures" FieldLineStyle="Solid" LineStyleName="Solid" LineStyleScale="1" />
+    <PointFeatureDefinition Code="BP" Name="BarrierPost" Category="Structures" Color="FE000000" Layer="ROWStructures">
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>1</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>barrier post</Name>
+          <Color>FFA52A2A</Color>
+          <SymbolName>Solid circle</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description>post</Description>
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <PointFeatureDefinition Code="IP" Name="IrodPipe" Category="SurveyControl" Color="FE000000" Layer="SurveyControl">
+      <Attributes>
+        <ListAttribute Name="Size" Description="size in mm" EntryMethod="OfficeUseOnly" DefaultItemIndex="3">
+          <ListItems>
+            <Item>5</Item>
+            <Item>7</Item>
+            <Item>10</Item>
+            <Item>16</Item>
+            <Item>25</Item>
+            <Item>35</Item>
+            <Item>50</Item>
+            <Item>other</Item>
+          </ListItems>
+        </ListAttribute>
+        <PhotoAttribute Name="Photo" EntryMethod="Optional" />
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>0.5</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>iron pipe</Name>
+          <Color>FFFF0000</Color>
+          <SymbolName>Double circle</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description>iron pipe</Description>
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <PointFeatureDefinition Code="WM" Name="WaterMeter" Category="Utility" Color="FF0000FF" Layer="UtilityWater">
+      <Attributes>
+        <PhotoAttribute Name="Photo" EntryMethod="Optional" />
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>1</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>Symbol</Name>
+          <Color>FF0000FF</Color>
+          <SymbolName>Box Cross</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description />
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <LineFeatureDefinition Code="GUT" Name="Gutter" Category="Roads" Color="FFFFFFFF" Layer="Roadway" FieldLineStyle="Solid" LineStyleName="Solid" LineStyleScale="1" />
+    <LineFeatureDefinition Code="VEGL" Name="VegLine" Category="Earth" Color="FF008000" Layer="Earth" FieldLineStyle="Solid" LineStyleName="Dashed 3-1" LineStyleScale="10" />
+    <LineFeatureDefinition Code="CP" Name="ConcretePad" Category="Structures" Color="FF808080" Layer="Structures" FieldLineStyle="Solid" LineStyleName="Solid" LineStyleScale="1" />
+    <PointFeatureDefinition Code="BT" Name="BroadleafTree" Category="Earth" Color="FE000000" Layer="Earth">
+      <Attributes>
+        <DoubleAttribute Name="Trunk" Description="diameter of trunk (m) at 1 meter above ground" EntryMethod="Optional" DefaultValue="1" MinimumValue="0.1" MaximumValue="10" NumberOfDecimals="2" />
+        <IntegerAttribute Name="Spread" Description="Dripline" EntryMethod="Optional" DefaultValue="4" MinimumValue="1" MaximumValue="50" />
+        <ListAttribute Name="Type" Description="general type of broadleaf tree" EntryMethod="Optional" DefaultItemIndex="2">
+          <ListItems>
+            <Item>Oak</Item>
+            <Item>Birch</Item>
+            <Item>Aspen</Item>
+            <Item>Hickory</Item>
+            <Item>Cherry</Item>
+            <Item>Ash</Item>
+            <Item>Poplar</Item>
+            <Item>Elm</Item>
+            <Item>Maple</Item>
+            <Item>Walnut</Item>
+            <Item>Willow</Item>
+            <Item>Mahogany</Item>
+            <Item>Holly</Item>
+            <Item>Catalpa</Item>
+            <Item>Apple</Item>
+          </ListItems>
+        </ListAttribute>
+        <PhotoAttribute Name="Photo" EntryMethod="Optional" />
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <AttributeName>Spread</AttributeName>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>dtree</Name>
+          <Color>FF00FF00</Color>
+          <SymbolName>Tree 2</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description />
+        </Symbol>
+        <Symbol>
+          <DimensionOneValue>
+            <AttributeName>Trunk</AttributeName>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>trunk</Name>
+          <Color>FF008000</Color>
+          <SymbolName>Double circle</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description />
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <LineFeatureDefinition Code="WIRF" Name="WireFence" Category="Landscape" Color="FF734F4D" Layer="Landscape" FieldLineStyle="Solid" LineStyleName="Wire Fence" LineStyleScale="5">
+      <Attributes>
+        <DoubleAttribute Name="Height" EntryMethod="Optional" DefaultValue="1.5" MinimumValue="0.5" MaximumValue="5" />
+      </Attributes>
+    </LineFeatureDefinition>
+    <LineFeatureDefinition Code="CBI" Name="CatchBasinInlet" Category="Roads" Color="FFD3D3D3" Layer="Roadway" FieldLineStyle="Solid" LineStyleName="Solid" LineStyleScale="1" />
+    <PointFeatureDefinition Code="IR" Name="IronRod" Category="SurveyControl" Color="FE000000" Layer="SurveyControl">
+      <Attributes>
+        <ListAttribute Name="Size" Description="size in mm" EntryMethod="Optional" DefaultItemIndex="3">
+          <ListItems>
+            <Item>5</Item>
+            <Item>7</Item>
+            <Item>10</Item>
+            <Item>16</Item>
+            <Item>20</Item>
+            <Item>25</Item>
+            <Item>other</Item>
+          </ListItems>
+        </ListAttribute>
+        <PhotoAttribute Name="Photo" EntryMethod="Optional" />
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>0.5</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>iron rod</Name>
+          <Color>FFFF0000</Color>
+          <SymbolName>Solid double circle</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description>iron rod</Description>
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <PointFeatureDefinition Code="GM" Name="GasMeter" Category="Utility" Color="FE000000" Layer="Utility">
+      <Attributes>
+        <PhotoAttribute Name="Photo" EntryMethod="Optional" />
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>1</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>Symbol</Name>
+          <Color>FF00FF00</Color>
+          <SymbolName>Solid circle</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description />
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <LineFeatureDefinition Code="SW" Name="Sidewalk" Category="Roads" Color="FFFFFFFF" Layer="ROWStructures" FieldLineStyle="Solid" LineStyleName="Solid" LineStyleScale="1">
+      <Attributes>
+        <ListAttribute Name="SurfaceType" Description="Surface Type" EntryMethod="Optional">
+          <ListItems>
+            <Item>Concrete</Item>
+            <Item>Brick</Item>
+            <Item>Asphalt</Item>
+          </ListItems>
+        </ListAttribute>
+      </Attributes>
+      <Lines>
+        <Line>
+          <Width>
+            <FixedValue>1</FixedValue>
+          </Width>
+          <HorizontalOffset>
+            <FixedValue>0</FixedValue>
+          </HorizontalOffset>
+          <VerticalOffset>
+            <FixedValue>0</FixedValue>
+          </VerticalOffset>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <OffsetDimensioning>Ground</OffsetDimensioning>
+          <Name>sw</Name>
+          <Description>sidewalk</Description>
+          <Color>FE000000</Color>
+          <LineStyleName>Solid</LineStyleName>
+        </Line>
+      </Lines>
+    </LineFeatureDefinition>
+    <LineFeatureDefinition Code="TOPL" Name="TopLevee" Category="Earth" Color="FF00FF00" Layer="Earth" FieldLineStyle="Solid" LineStyleName="Top of bank" LineStyleScale="10" />
+    <LineFeatureDefinition Code="BC" Name="BackCurb" Category="Roads" Color="FFFFFFFF" Layer="Roadway" FieldLineStyle="Solid" LineStyleName="Solid" LineStyleScale="1" />
+    <LineFeatureDefinition Code="RWAL" Name="RetainingWall" Category="Structures" Color="FFA9A9A9" Layer="Structures" FieldLineStyle="Solid" LineStyleName="Retaining Wall" LineStyleScale="1" />
+    <LineFeatureDefinition Code="HDG" Name="Hedge" Category="Landscape" Color="FF008000" Layer="Landscape" FieldLineStyle="Solid" LineStyleName="Hedge" LineStyleScale="2" />
+    <LineFeatureDefinition Code="GT" Name="Gate" Category="Landscape" Color="FF734F4D" Layer="Landscape" FieldLineStyle="Solid" LineStyleName="Gate" LineStyleScale="10" />
+    <PointFeatureDefinition Code="WV" Name="WaterValve" Category="Utility" Color="FF0000FF" Layer="UtilityWater">
+      <Attributes>
+        <PhotoAttribute Name="Photo" EntryMethod="Optional" />
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>0.75</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>Symbol</Name>
+          <Color>FF0000FF</Color>
+          <SymbolName>Valve</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description />
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <PointFeatureDefinition Code="CLM" Name="Column" Category="Structures" Color="FE000000" Layer="Structures">
+      <Attributes>
+        <IntegerAttribute Name="Size" Description="Size in cm" EntryMethod="Optional" DefaultValue="30" MinimumValue="1" MaximumValue="600" />
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>1</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>column</Name>
+          <Color>FD000000</Color>
+          <SymbolName>Double circle</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description>post</Description>
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <LineFeatureDefinition Code="STP" Name="Steps" Category="Landscape" Color="FFFFFFFF" Layer="Landscape" FieldLineStyle="Solid" LineStyleName="Solid" LineStyleScale="1" />
+    <PointFeatureDefinition Code="DI" Name="DrainInlet" Category="Roads" Color="FE000000" Layer="ROWStructures">
+      <Attributes>
+        <StringAttribute Name="Size" Description="Round or rectangular size (cm)" EntryMethod="Optional" DefaultValue="60" MaximumLength="150" />
+        <PhotoAttribute Name="Photo" EntryMethod="Optional" />
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>1</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>Drain inlet</Name>
+          <Color>FD000000</Color>
+          <SymbolName>Box</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description>drain inlet</Description>
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <LineFeatureDefinition Code="TI" Name="TrafficIsland" Category="Roads" Color="FFFFFFFF" Layer="Roadway" FieldLineStyle="Solid" LineStyleName="Solid" LineStyleScale="1" />
+    <PointFeatureDefinition Code="PLC" Name="PipelineCathode" Category="Utility" Color="FE000000" Layer="Pipeline">
+      <Attributes>
+        <PhotoAttribute Name="Photo" EntryMethod="Optional" />
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>0.25</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>Symbol</Name>
+          <Color>FF008000</Color>
+          <SymbolName>Cross</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description />
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <PointFeatureDefinition Code="GWP" Name="GuyWirePole" Category="Utility" Color="FE000000" Layer="Utility">
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>2</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>Symbol</Name>
+          <Color>FFFFFF00</Color>
+          <SymbolName>PP</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description />
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <PointFeatureDefinition Code="FH" Name="FireHydrant" Category="Utility" Color="FF0000FF" Layer="UtilityWater">
+      <Attributes>
+        <PhotoAttribute Name="Photo" EntryMethod="Optional" />
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>1</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>fh</Name>
+          <Color>FF0000FF</Color>
+          <SymbolName>Hydrant</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description>fire hydrant</Description>
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <LineFeatureDefinition Code="BLDG" Name="Building" Category="Structures" Color="FFA52A2A" Layer="Structures" FieldLineStyle="Solid" LineStyleName="Solid" LineStyleScale="1" />
+    <LineFeatureDefinition Code="LSE" Name="LandscapeEdge" Category="Landscape" Color="FF008000" Layer="Landscape" FieldLineStyle="Solid" LineStyleName="Solid" LineStyleScale="1" />
+    <PointFeatureDefinition Code="SP" Name="SignPost" Category="Roads" Color="FE000000" Layer="ROWStructures">
+      <Attributes>
+        <ListAttribute Name="Type" Description="Type Of Sign" EntryMethod="Optional" DefaultItemIndex="9">
+          <ListItems>
+            <Item>Stop</Item>
+            <Item>Yield</Item>
+            <Item>Merge</Item>
+            <Item>Turn</Item>
+            <Item>Speed Limit</Item>
+            <Item>Caution</Item>
+            <Item>Information</Item>
+            <Item>Road Name</Item>
+            <Item>Advertisement</Item>
+            <Item>Other</Item>
+          </ListItems>
+        </ListAttribute>
+        <PhotoAttribute Name="Photo" EntryMethod="Optional" />
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>1.5</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>sign post</Name>
+          <Color>FFA52A2A</Color>
+          <SymbolName>Sign</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description>sing post</Description>
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <LineFeatureDefinition Code="HW" Name="Headwall" Category="Structures" Color="FFA9A9A9" Layer="Structures" FieldLineStyle="Solid" LineStyleName="Solid" LineStyleScale="1" />
+    <PointFeatureDefinition Code="CMH" Name="CommMH" Category="Utility" Color="FE000000" Layer="UtilityElec">
+      <Attributes>
+        <ListAttribute Name="Condition" Description="Conditional Of Lid And Rim" EntryMethod="Optional" DefaultItemIndex="1">
+          <ListItems>
+            <Item>Good</Item>
+            <Item>Fair</Item>
+            <Item>Poor</Item>
+          </ListItems>
+        </ListAttribute>
+        <PhotoAttribute Name="Photo" EntryMethod="Optional" />
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>1</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>Symbol</Name>
+          <Color>FFFFFF00</Color>
+          <SymbolName>Single circle</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description />
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <PointFeatureDefinition Code="PLD" Name="PipelineDepth" Category="Utility" Color="FE000000" Layer="Pipeline">
+      <Attributes>
+        <PhotoAttribute Name="Photo" EntryMethod="Optional" />
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>0.5</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>Symbol</Name>
+          <Color>FF008000</Color>
+          <SymbolName>Cross</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description />
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <LineFeatureDefinition Code="DK" Name="Deck" Category="Landscape" Color="FFA52A2A" Layer="Landscape" FieldLineStyle="Solid" LineStyleName="Solid" LineStyleScale="1" />
+    <LineFeatureDefinition Code="LSTB" Name="LsTimber" Category="Landscape" Color="FF008000" Layer="Landscape" FieldLineStyle="Solid" LineStyleName="Solid" LineStyleScale="1" />
+    <PointFeatureDefinition Code="BRSH" Name="Brush" Category="Earth" Color="FE000000" Layer="Earth">
+      <Attributes>
+        <PhotoAttribute Name="Photo" EntryMethod="Optional" />
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>1</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>brsh</Name>
+          <Color>FF00FF00</Color>
+          <SymbolName>Bush</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description>brsh</Description>
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <LineFeatureDefinition Code="DW" Name="Driveway" Category="Roads" Color="FFD3D3D3" Layer="ROWStructures" FieldLineStyle="Solid" LineStyleName="Solid" LineStyleScale="1">
+      <Attributes>
+        <ListAttribute Name="SurfaceType" Description="Surface Type" EntryMethod="Optional">
+          <ListItems>
+            <Item>Asphalt</Item>
+            <Item>Concrete</Item>
+            <Item>Dirt</Item>
+            <Item>Rock</Item>
+            <Item>Brick</Item>
+            <Item>Grass</Item>
+          </ListItems>
+        </ListAttribute>
+      </Attributes>
+    </LineFeatureDefinition>
+    <PointFeatureDefinition Code="SCP" Name="OtherSvyCtrl" Category="SurveyControl" Color="FE000000" Layer="SurveyControl">
+      <Attributes>
+        <PhotoAttribute Name="Photo" EntryMethod="Optional" />
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>0.5</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>survey control point</Name>
+          <Color>FFFF0000</Color>
+          <SymbolName>Triangle circle</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description>scp</Description>
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <LineFeatureDefinition Code="RB" Name="RoadBarrier" Category="Roads" Color="FFA52A2A" Layer="ROWStructures" FieldLineStyle="Solid" LineStyleName="Retaining Wall" LineStyleScale="2" />
+    <PointFeatureDefinition Code="FP" Name="FlagPole" Category="Structures" Color="FE000000" Layer="Structures">
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>0.5</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>flag pole</Name>
+          <Color>FD000000</Color>
+          <SymbolName>Solid double circle</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description>pole</Description>
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <PointFeatureDefinition Code="BSH" Name="Bush" Category="Landscape" Color="FE000000" Layer="Landscape">
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>0.6</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>brsh</Name>
+          <Color>FF00FF00</Color>
+          <SymbolName>Bush</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description>brsh</Description>
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <PointFeatureDefinition Code="STMH" Name="StormMH" Category="Utility" Color="FF0000FF" Layer="UtilityStorm">
+      <Attributes>
+        <PhotoAttribute Name="Photo" EntryMethod="Optional" />
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>0.75</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>stmh</Name>
+          <Color>FF0000FF</Color>
+          <SymbolName>Double circle</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description>Storm MH</Description>
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <LineFeatureDefinition Code="TC" Name="TopCurb" Category="Roads" Color="FFFFFFFF" Layer="Roadway" FieldLineStyle="Solid" LineStyleName="Solid" LineStyleScale="1" />
+    <LineFeatureDefinition Code="HCR" Name="HCRamp" Category="Roads" Color="FFD3D3D3" Layer="ROWStructures" FieldLineStyle="Solid" LineStyleName="Solid" LineStyleScale="1" />
+    <PointFeatureDefinition Code="TSB" Name="TrafficSignalBox" Category="Utility" Color="FFFFFF00" Layer="ROWStructures">
+      <Attributes>
+        <PhotoAttribute Name="Photo" EntryMethod="Optional" />
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>0.25</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>Symbol</Name>
+          <Color>FD000000</Color>
+          <SymbolName>Box</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description />
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <PointFeatureDefinition Code="EM" Name="ElecMeter" Category="Utility" Color="FE000000" Layer="UtilityElec">
+      <Attributes>
+        <PhotoAttribute Name="Photo" EntryMethod="OfficeUseOnly" />
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>0.3</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>Symbol</Name>
+          <Color>FFFFFF00</Color>
+          <SymbolName>Solid box</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description />
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <PointFeatureDefinition Code="ELC" Name="ElecConduit" Category="Utility" Color="FE000000" Layer="UtilityElec">
+      <Attributes>
+        <PhotoAttribute Name="Photo" EntryMethod="Optional" />
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>1</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>Symbol</Name>
+          <Color>FFFFFF00</Color>
+          <SymbolName>Box Cross</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description />
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <PointFeatureDefinition Code="LP" Name="LightPole" Category="Utility" Color="FF000000" Layer="UtilityElec">
+      <Attributes>
+        <PhotoAttribute Name="photo" EntryMethod="Optional" />
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>2</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>lp</Name>
+          <Color>FFFFFF00</Color>
+          <SymbolName>Lamp post</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description>light pole</Description>
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <LineFeatureDefinition Code="GB" Name="GradeBreak" Category="Earth" Color="FFFF00FF" Layer="Earth" FieldLineStyle="Solid" LineStyleName="Dashed 4-1" LineStyleScale="10" />
+    <PointFeatureDefinition Code="TSP" Name="TrafficSignalPole" Category="Utility" Color="FFFFFF00" Layer="Utility">
+      <Attributes>
+        <StringAttribute Name="PoleNumber" Description="Pole ID" EntryMethod="Optional" />
+        <PhotoAttribute Name="Photo" EntryMethod="Optional" />
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>1</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>Symbol</Name>
+          <Color>FD000000</Color>
+          <SymbolName>Double circle</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description />
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <LineFeatureDefinition Code="WE" Name="WaterEdge" Category="Earth" Color="FF0000FF" Layer="Earth" FieldLineStyle="Solid" LineStyleName="Water line" LineStyleScale="10" />
+    <PointFeatureDefinition Code="CT" Name="ConiferTree" Category="Earth" Color="FE000000" Layer="Earth">
+      <Attributes>
+        <DoubleAttribute Name="Trunk" Description="Diameter Of Trunk (m) at 1 meter above ground" EntryMethod="Optional" DefaultValue="1" MinimumValue="0.1" MaximumValue="10" NumberOfDecimals="1" />
+        <DoubleAttribute Name="Spread" Description="Diameter of Trunk (M) 1 meter above ground" EntryMethod="Optional" DefaultValue="4" MinimumValue="0.1" MaximumValue="50" NumberOfDecimals="2" />
+        <ListAttribute Name="Type" Description="general type of conifer tree" EntryMethod="Optional" DefaultItemIndex="0">
+          <ListItems>
+            <Item>Pine</Item>
+            <Item>Spruce</Item>
+            <Item>Redwood</Item>
+            <Item>Hemlock</Item>
+            <Item>Juniper</Item>
+            <Item>DouglasFir</Item>
+            <Item>Cedar</Item>
+            <Item>Cyprus</Item>
+          </ListItems>
+        </ListAttribute>
+        <PhotoAttribute Name="Photo" EntryMethod="Optional" />
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <AttributeName>Spread</AttributeName>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>c tree</Name>
+          <Color>FF00FF00</Color>
+          <SymbolName>Tree 1</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description>c tree</Description>
+        </Symbol>
+        <Symbol>
+          <DimensionOneValue>
+            <AttributeName>Trunk</AttributeName>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>trunk</Name>
+          <Color>FF008000</Color>
+          <SymbolName>Double circle</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description>trunk</Description>
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <PointFeatureDefinition Code="GLT" Name="GroundLight" Category="Landscape" Color="FE000000" Layer="Landscape">
+      <Attributes>
+        <ListAttribute Name="Power" Description="Type of Supplied power" EntryMethod="Optional" DefaultItemIndex="1">
+          <ListItems>
+            <Item>Solar</Item>
+            <Item>LowVoltage</Item>
+            <Item>Other</Item>
+          </ListItems>
+        </ListAttribute>
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>0.5</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>Glight</Name>
+          <Color>FD000000</Color>
+          <SymbolName>Cross circle</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description>Ground light</Description>
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <PointFeatureDefinition Code="ICB" Name="IrrControlBox" Category="Landscape" Color="FE000000" Layer="Landscape">
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>0.4</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>icb</Name>
+          <Color>FF0000FF</Color>
+          <SymbolName>Solid box</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description>irr control box</Description>
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <PointFeatureDefinition Code="PB" Name="PhoneBooth" Category="Structures" Color="FE000000" Layer="Structures">
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>2</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>phone booth</Name>
+          <Color>FD000000</Color>
+          <SymbolName>Box</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description>phone booth</Description>
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <PointFeatureDefinition Code="NAIL" Name="Nail" Category="SurveyControl" Color="FE000000" Layer="SurveyControl">
+      <Attributes>
+        <StringAttribute Name="Type" Description="Type Of Nail" EntryMethod="Optional" />
+        <PhotoAttribute Name="Photo" EntryMethod="Optional" />
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>0.5</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>nail</Name>
+          <Color>FFFF0000</Color>
+          <SymbolName>Solid double circle</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description>nail</Description>
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <LineFeatureDefinition Code="WODF" Name="WoodFence" Category="Landscape" Color="FF734F4D" Layer="Landscape" FieldLineStyle="Solid" LineStyleName="Fence" LineStyleScale="5">
+      <Attributes>
+        <DoubleAttribute Name="Height" EntryMethod="Optional" MinimumValue="0.5" MaximumValue="5" />
+      </Attributes>
+    </LineFeatureDefinition>
+    <PointFeatureDefinition Code="GPR" Name="GasPipeRiser" Category="Utility" Color="FE000000" Layer="Utility">
+      <Attributes>
+        <PhotoAttribute Name="Photo" EntryMethod="Optional" />
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>1</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>Symbol</Name>
+          <Color>FF00FF00</Color>
+          <SymbolName>Cross</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description />
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <LineFeatureDefinition Code="WLK" Name="WalkPath" Category="Landscape" Color="FFFFFFFF" Layer="Landscape" FieldLineStyle="Solid" LineStyleName="Solid" LineStyleScale="1">
+      <Attributes>
+        <ListAttribute Name="SurfaceType" Description="Surface Type" EntryMethod="Optional" DefaultItemIndex="5">
+          <ListItems>
+            <Item>Concrete</Item>
+            <Item>Asphalt</Item>
+            <Item>Brick</Item>
+            <Item>Stone</Item>
+            <Item>Sand</Item>
+            <Item>Gravel</Item>
+            <Item>Dirt</Item>
+            <Item>Other</Item>
+          </ListItems>
+        </ListAttribute>
+      </Attributes>
+    </LineFeatureDefinition>
+    <LineFeatureDefinition Code="TOED" Name="ToeDitch" Category="Earth" Color="FF00FF00" Layer="Earth" FieldLineStyle="Solid" LineStyleName="Solid" LineStyleScale="1" />
+    <LineFeatureDefinition Code="FL" Name="FlowLline" Category="Earth" Color="FF0000FF" Layer="Earth" FieldLineStyle="Solid" LineStyleName="Short dash dot" LineStyleScale="10" />
+    <PointFeatureDefinition Code="PP" Name="PowerPole" Category="Utility" Color="FE000000" Layer="UtilityElec">
+      <Attributes>
+        <PhotoAttribute Name="Photo" EntryMethod="Optional" />
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>3</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>Symbol</Name>
+          <Color>FFFFFF00</Color>
+          <SymbolName>PP</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description />
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <PointFeatureDefinition Code="PLM" Name="PipelineMarker" Category="Utility" Color="FE000000" Layer="Pipeline">
+      <Attributes>
+        <PhotoAttribute Name="Photo" EntryMethod="Optional" />
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>3</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>Symbol</Name>
+          <Color>FF008000</Color>
+          <SymbolName>Sign</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description />
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <LineFeatureDefinition Code="EPMT" Name="EdgePvmt" Category="Roads" Color="FFFFFFFF" Layer="Roadway" FieldLineStyle="Solid" LineStyleName="Solid" LineStyleScale="1">
+      <Attributes>
+        <ListAttribute Name="SurfaceType" Description="Surface Type" EntryMethod="Optional">
+          <ListItems>
+            <Item>Asphalt</Item>
+            <Item>Concrete</Item>
+            <Item>Rock</Item>
+            <Item>Brick</Item>
+            <Item>Other</Item>
+          </ListItems>
+        </ListAttribute>
+      </Attributes>
+    </LineFeatureDefinition>
+    <PointFeatureDefinition Code="HH" Name="HandHole" Category="Utility" Color="FE000000" Layer="Utility">
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>1</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>Symbol</Name>
+          <Color>FFFFA500</Color>
+          <SymbolName>Solid box</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description />
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <LineFeatureDefinition Code="WW" Name="WingWall" Category="Structures" Color="FF808080" Layer="Structures" FieldLineStyle="Solid" LineStyleName="Solid" LineStyleScale="1" />
+    <PointFeatureDefinition Code="PLMT" Name="PipelineMeter" Category="Utility" Color="FE000000" Layer="Pipeline">
+      <Attributes>
+        <PhotoAttribute Name="Photo" EntryMethod="Optional" />
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>1</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>Symbol</Name>
+          <Color>FF008000</Color>
+          <SymbolName>Solid circle</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description />
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <LineFeatureDefinition Code="RCL" Name="Centerline" Category="Roads" Color="FFFFFF00" Layer="Roadway" FieldLineStyle="Solid" LineStyleName="Center line" LineStyleScale="5" />
+    <PointFeatureDefinition Code="ETB" Name="ElecTransformerBox" Category="Utility" Color="FE000000" Layer="UtilityElec">
+      <Attributes>
+        <PhotoAttribute Name="Photo" EntryMethod="Optional" />
+      </Attributes>
+      <Symbols>
+        <Symbol>
+          <DimensionOneValue>
+            <FixedValue>1</FixedValue>
+          </DimensionOneValue>
+          <DimensionTwoValue>
+            <FixedValue>1</FixedValue>
+          </DimensionTwoValue>
+          <DimensionThreeValue>
+            <FixedValue>1</FixedValue>
+          </DimensionThreeValue>
+          <Rotation>
+            <FixedValue>0</FixedValue>
+          </Rotation>
+          <Name>Elec transformer box</Name>
+          <Color>FFFFFF00</Color>
+          <SymbolName>Small Box</SymbolName>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <Dimensioning>Ground</Dimensioning>
+          <Description>small elec above ground box</Description>
+        </Symbol>
+      </Symbols>
+    </PointFeatureDefinition>
+    <LineFeatureDefinition Code="ET" Name="ElecTransformerPad" Category="Utility" Color="FE000000" Layer="UtilityElec" FieldLineStyle="Solid" LineStyleName="Solid" LineStyleScale="1" />
+    <LineFeatureDefinition Code="WL" Name="WaterLine" Category="Utility" Color="FE000000" Layer="UtilityWater" FieldLineStyle="Solid" LineStyleName="Water line" LineStyleScale="5" />
+    <LineFeatureDefinition Code="OHE" Name="OverheadElec" Category="Utility" Color="FE000000" Layer="UtilityElec" FieldLineStyle="Solid" LineStyleName="Power line" LineStyleScale="3" />
+    <LineFeatureDefinition Code="SL" Name="SanSewerLine" Category="Utility" Color="FE000000" Layer="UtilitySanitary" FieldLineStyle="Solid" LineStyleName="Sanitary sewer" LineStyleScale="5" />
+    <LineFeatureDefinition Code="SSL" Name="StormSewerLine" Category="Utility" Color="FE000000" Layer="UtilityStorm" FieldLineStyle="Solid" LineStyleName="Stormwater" LineStyleScale="5">
+      <Attributes>
+        <PhotoAttribute Name="photo" EntryMethod="Optional" />
+      </Attributes>
+    </LineFeatureDefinition>
+    <LineFeatureDefinition Code="GUTL" Name="GutterLeft" Category="Roads" Color="FFFFFFFF" Layer="Roadway" FieldLineStyle="Solid" LineStyleName="Solid" LineStyleScale="1">
+      <Lines>
+        <Line>
+          <Width>
+            <FixedValue>1</FixedValue>
+          </Width>
+          <HorizontalOffset>
+            <FixedValue>-0.15240030480060962</FixedValue>
+          </HorizontalOffset>
+          <VerticalOffset>
+            <FixedValue>0.15240030480060962</FixedValue>
+          </VerticalOffset>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <OffsetDimensioning>Ground</OffsetDimensioning>
+          <Name>Back of Curb</Name>
+          <Description />
+          <Color>FE000000</Color>
+          <LineStyleName>By Layer</LineStyleName>
+        </Line>
+        <Line>
+          <Width>
+            <FixedValue>1</FixedValue>
+          </Width>
+          <HorizontalOffset>
+            <FixedValue>0</FixedValue>
+          </HorizontalOffset>
+          <VerticalOffset>
+            <FixedValue>0</FixedValue>
+          </VerticalOffset>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <OffsetDimensioning>Ground</OffsetDimensioning>
+          <Name>Gutter</Name>
+          <Description />
+          <Color>FFFFFFFF</Color>
+          <LineStyleName>Solid</LineStyleName>
+        </Line>
+      </Lines>
+    </LineFeatureDefinition>
+    <LineFeatureDefinition Code="GUTR" Name="GutterRight" Category="Roads" Color="FFFFFFFF" Layer="Roadway" FieldLineStyle="Solid" LineStyleName="Solid" LineStyleScale="1">
+      <Lines>
+        <Line>
+          <Width>
+            <FixedValue>1</FixedValue>
+          </Width>
+          <HorizontalOffset>
+            <FixedValue>0.15240030480060962</FixedValue>
+          </HorizontalOffset>
+          <VerticalOffset>
+            <FixedValue>0.15240030480060962</FixedValue>
+          </VerticalOffset>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <OffsetDimensioning>Ground</OffsetDimensioning>
+          <Name>Back of Curb</Name>
+          <Description />
+          <Color>FE000000</Color>
+          <LineStyleName>By Layer</LineStyleName>
+        </Line>
+        <Line>
+          <Width>
+            <FixedValue>1</FixedValue>
+          </Width>
+          <HorizontalOffset>
+            <FixedValue>0</FixedValue>
+          </HorizontalOffset>
+          <VerticalOffset>
+            <FixedValue>0</FixedValue>
+          </VerticalOffset>
+          <Scale>
+            <FixedValue>1</FixedValue>
+          </Scale>
+          <OffsetDimensioning>Ground</OffsetDimensioning>
+          <Name>Gutter</Name>
+          <Description />
+          <Color>FFFFFFFF</Color>
+          <LineStyleName>Solid</LineStyleName>
+        </Line>
+      </Lines>
+    </LineFeatureDefinition>
+  </FeatureDefinitions>
+  <FeatureCodeGroupDefinitions>
+    <FeatureCodeGroupDefinition Name="ControlCodes" Description="LineCodes" />
+    <FeatureCodeGroupDefinition Name="SVYControl" Description="SurveyControlPoints">
+      <Items>
+        <Item>
+          <Code>DISK</Code>
+        </Item>
+        <Item>
+          <Code>IP</Code>
+        </Item>
+        <Item>
+          <Code>IR</Code>
+        </Item>
+        <Item>
+          <Code>NAIL</Code>
+        </Item>
+        <Item>
+          <Code>SCP</Code>
+        </Item>
+      </Items>
+    </FeatureCodeGroupDefinition>
+    <FeatureCodeGroupDefinition Name="Pavement" Description="Surface for walking, driving, riding">
+      <Items>
+        <Item>
+          <Code>DW</Code>
+        </Item>
+        <Item>
+          <Code>EPMT</Code>
+        </Item>
+        <Item>
+          <Code>RCL</Code>
+        </Item>
+        <Item>
+          <Code>SW</Code>
+        </Item>
+        <Item>
+          <Code>TC</Code>
+        </Item>
+        <Item>
+          <Code>TI</Code>
+        </Item>
+        <Item>
+          <Code>WLK</Code>
+        </Item>
+      </Items>
+    </FeatureCodeGroupDefinition>
+    <FeatureCodeGroupDefinition Name="Road structures" Description="items along Roadway">
+      <Items>
+        <Item>
+          <Code>BA</Code>
+        </Item>
+        <Item>
+          <Code>BC</Code>
+        </Item>
+        <Item>
+          <Code>BP</Code>
+        </Item>
+        <Item>
+          <Code>GR</Code>
+        </Item>
+        <Item>
+          <Code>RB</Code>
+        </Item>
+        <Item>
+          <Code>SP</Code>
+        </Item>
+        <Item>
+          <Code>TSB</Code>
+        </Item>
+        <Item>
+          <Code>HH</Code>
+        </Item>
+      </Items>
+    </FeatureCodeGroupDefinition>
+    <FeatureCodeGroupDefinition Name="Vegetation" Description="Anything that grows (in the ground)">
+      <Items>
+        <Item>
+          <Code>BRSH</Code>
+        </Item>
+        <Item>
+          <Code>BT</Code>
+        </Item>
+        <Item>
+          <Code>HDG</Code>
+        </Item>
+        <Item>
+          <Code>LSE</Code>
+        </Item>
+        <Item>
+          <Code>LSTB</Code>
+        </Item>
+        <Item>
+          <Code>VEGL</Code>
+        </Item>
+        <Item>
+          <Code>WE</Code>
+        </Item>
+      </Items>
+    </FeatureCodeGroupDefinition>
+    <FeatureCodeGroupDefinition Name="Earth drainage" Description="Earthen drainage items">
+      <Items>
+        <Item>
+          <Code>FL</Code>
+        </Item>
+        <Item>
+          <Code>GB</Code>
+        </Item>
+        <Item>
+          <Code>NG</Code>
+        </Item>
+        <Item>
+          <Code>TOED</Code>
+        </Item>
+        <Item>
+          <Code>TOPD</Code>
+        </Item>
+        <Item>
+          <Code>TOEL</Code>
+        </Item>
+        <Item>
+          <Code>TOPL</Code>
+        </Item>
+        <Item>
+          <Code>WE</Code>
+        </Item>
+      </Items>
+    </FeatureCodeGroupDefinition>
+    <FeatureCodeGroupDefinition Name="Manmade drainage">
+      <Items>
+        <Item>
+          <Code>CBI</Code>
+        </Item>
+        <Item>
+          <Code>DI</Code>
+        </Item>
+        <Item>
+          <Code>GUT</Code>
+        </Item>
+        <Item>
+          <Code>HW</Code>
+        </Item>
+        <Item>
+          <Code>RPR</Code>
+        </Item>
+        <Item>
+          <Code>RWAL</Code>
+        </Item>
+        <Item>
+          <Code>STMP</Code>
+        </Item>
+        <Item>
+          <Code>WW</Code>
+        </Item>
+      </Items>
+    </FeatureCodeGroupDefinition>
+    <FeatureCodeGroupDefinition Name="Water Utilities" Description="Water service items">
+      <Items>
+        <Item>
+          <Code>FH</Code>
+        </Item>
+        <Item>
+          <Code>HH</Code>
+        </Item>
+        <Item>
+          <Code>WM</Code>
+        </Item>
+        <Item>
+          <Code>WV</Code>
+        </Item>
+        <Item>
+          <Code>STMH</Code>
+        </Item>
+        <Item>
+          <Code>SMH</Code>
+        </Item>
+      </Items>
+    </FeatureCodeGroupDefinition>
+    <FeatureCodeGroupDefinition Name="Landscaping" Description="Landscaping items">
+      <Items>
+        <Item>
+          <Code>DK</Code>
+        </Item>
+        <Item>
+          <Code>GLT</Code>
+        </Item>
+        <Item>
+          <Code>ICB</Code>
+        </Item>
+        <Item>
+          <Code>LSE</Code>
+        </Item>
+        <Item>
+          <Code>LSTB</Code>
+        </Item>
+        <Item>
+          <Code>SPHD</Code>
+        </Item>
+      </Items>
+    </FeatureCodeGroupDefinition>
+    <FeatureCodeGroupDefinition Name="Buildings" Description="Items around buildings">
+      <Items>
+        <Item>
+          <Code>AW</Code>
+        </Item>
+        <Item>
+          <Code>BLDG</Code>
+        </Item>
+        <Item>
+          <Code>CP</Code>
+        </Item>
+        <Item>
+          <Code>HCR</Code>
+        </Item>
+      </Items>
+    </FeatureCodeGroupDefinition>
+    <FeatureCodeGroupDefinition Name="Structures" Description="building objects">
+      <Items>
+        <Item>
+          <Code>ACP</Code>
+        </Item>
+        <Item>
+          <Code>CLM</Code>
+        </Item>
+        <Item>
+          <Code>FP</Code>
+        </Item>
+        <Item>
+          <Code>PB</Code>
+        </Item>
+        <Item>
+          <Code>STP</Code>
+        </Item>
+        <Item>
+          <Code>LP</Code>
+        </Item>
+      </Items>
+    </FeatureCodeGroupDefinition>
+    <FeatureCodeGroupDefinition Name="Manmade boundary" Description="Fences etc">
+      <Items>
+        <Item>
+          <Code>GT</Code>
+        </Item>
+        <Item>
+          <Code>WIRF</Code>
+        </Item>
+        <Item>
+          <Code>WODF</Code>
+        </Item>
+      </Items>
+    </FeatureCodeGroupDefinition>
+    <FeatureCodeGroupDefinition Name="Power utilities" Description="elec, gas, comm utilities">
+      <Items>
+        <Item>
+          <Code>CMH</Code>
+        </Item>
+        <Item>
+          <Code>CMP</Code>
+        </Item>
+        <Item>
+          <Code>ELC</Code>
+        </Item>
+        <Item>
+          <Code>EM</Code>
+        </Item>
+        <Item>
+          <Code>GM</Code>
+        </Item>
+        <Item>
+          <Code>GWA</Code>
+        </Item>
+        <Item>
+          <Code>GWP</Code>
+        </Item>
+        <Item>
+          <Code>PP</Code>
+        </Item>
+        <Item>
+          <Code>ET</Code>
+        </Item>
+      </Items>
+    </FeatureCodeGroupDefinition>
+    <FeatureCodeGroupDefinition Name="Pipeline utilties" Description="Pipeline structures">
+      <Items>
+        <Item>
+          <Code>GPR</Code>
+        </Item>
+        <Item>
+          <Code>PLC</Code>
+        </Item>
+        <Item>
+          <Code>PLD</Code>
+        </Item>
+        <Item>
+          <Code>PLE</Code>
+        </Item>
+        <Item>
+          <Code>PLM</Code>
+        </Item>
+        <Item>
+          <Code>PLMT</Code>
+        </Item>
+      </Items>
+    </FeatureCodeGroupDefinition>
+  </FeatureCodeGroupDefinitions>
+</FeatureCodingDefinitions>
