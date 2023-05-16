@@ -168,6 +168,7 @@ An=[amid];
 Pn=[P_phase];
 % step 13
 X_vnb=inv(An'*Pn*An)*An'*Pn*Lnb;
+Q_nb=inv(An'*Pn*An)
 X_vnnb=inv(An'*Pn*An)*An'*Pn*Lnnb;
 Xn=Xb+X_vnb(1);
 Yn=Yb+X_vnb(2);
@@ -185,9 +186,9 @@ vnb=An*X_vnnb-Lnnb;
 criti=(vnb'*Pn*vnb)/(vb'*Pn*vb)
 
 %deviation
-sx=sqrt(Qzhat(1,1))
-sy=sqrt(Qzhat(2,2))
-sz=sqrt(Qzhat(3,3))
+sx=sqrt(Q_nb(1,1))
+sy=sqrt(Q_nb(2,2))
+sz=sqrt(Q_nb(3,3))
 
 
 
